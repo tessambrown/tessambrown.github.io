@@ -19,8 +19,8 @@ ul {
     padding: 1rem;
 }
 
-ul a:hover {
-    color: green;
+a:hover {
+  color: green; 
 }
 
 body {
