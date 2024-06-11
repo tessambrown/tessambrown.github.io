@@ -1,0 +1,21 @@
+/* make the level one heading pink */
+/* give the heading a 10px dotted border */
+h1 {
+    color: hotpink;
+    border-bottom: 10px dotted purple;
+}
+
+/* make the level 2 heading italic */
+h2 {
+    font: italic;
+}
+
+ul {
+    background-color: #eeeeee;
+    border-bottom: 5px solid purple;
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: green;
+}
