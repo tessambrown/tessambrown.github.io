@@ -43,28 +43,30 @@ h1, p {
   margin: 0;
 }
 
-article {
-  height: 7.50em;
-  background-color: rgba(0,0,0,0.7);
+.card article {
+  height: 12em;
+  background-color: rgba(0,0,0,0.5);
+  padding: 1em;
 }
 
-h1 {
+.card h1 {
   font-size: 1.25;
 }
 
-h2 {
+.card h2 {
   font-size: 1.25em;
   line-height: 1.25em;
   text-align: center;
 }
 
-p {
-  font-size: 0.94em;
+.card footer p {
+  font-size: 1.5em;
+  line-height: 2em;
+  text-align: center; 
 }
 
 /* styles specific to header and footer */
 .card header, .card footer {
-  height: 1.88em;
-  margin: 0.63em;
+  height: 5em;
   padding: 0.63em;
 }
