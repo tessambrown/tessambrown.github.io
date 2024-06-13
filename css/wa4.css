@@ -76,3 +76,36 @@ p {
   padding-left: 1em; /* Align left edge with other text */
   color: #f0f0f0; /* Light color for readability */
 }
+
+/* personal buisness card */
+.my_card{
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: #d1e8fc;
+  border: 0.2em solid #bde0fe;
+  border-radius: 1.5em;
+}
+
+.my_card article{
+  height: 12em; /* 120px */
+  padding: 1em; /* Ensure content padding matches other elements */
+  box-sizing: border-box;
+}
+
+.my_card article img {
+  max-height: 100%;
+  float: right;
+}
+
+.my_card header h2 {
+  font-size: 2em; /* 20px */
+  line-height: 1.5em; /* Centering within 30px content height */
+  text-align: left;
+}
+
+.my_card footer p {
+  font-size: 1.5em; /* 15px */
+  line-height: 2em; /* Centering within 30px content height */
+  text-align: center;
+}
