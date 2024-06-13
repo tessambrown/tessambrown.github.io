@@ -39,7 +39,7 @@ html {
   float: right;
 }
 
-h1, p {
+.card h1, p {
   margin: 0;
 }
 
