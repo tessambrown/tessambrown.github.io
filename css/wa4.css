@@ -79,69 +79,69 @@ p {
 
 /* personal buisness card */
 /* styles specific to the header */
-/* .my_card header {
+.my_card header {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
   border-radius: 0 0 1.5em 1.5em;
-} */
+}
 
 /* styles specific to the footer */
-/* .my_card footer {
+.my_card footer {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
   border-radius: 1.5em 1.5em 0 0;
-} */
+}
 
 /* styles specific to the header and footer */
-/* .my_card header,
+.my_card header,
 .my_card footer {
-  height: 5em; /* 50px */
-  /* padding: 1em; /* 10px on all sides */
-  /* box-sizing: border-box; /* Include padding in the height calculation */
-/* }  */ 
+  height: 5em; 
+  padding: 1em;
+  box-sizing: border-box; 
+}
 
 /* Reset default margin for h2 and p */
-/* h2,
+h2,
 p {
   margin: 0;
-} */
+}
 
 /* styles specific to the body of the business card */
-/* .my_card {
+.my_card {
   width: 35em;
   height: 22em;
   margin: 5em auto;
-  background-color: #054e98;
+  background-color: #3c8ad7;
   border: 0.2em solid #04356a;
   border-radius: 1.5em;
-} */
+}
 
-/* .my_card article {
+.my_card article {
   height: 12em; /* 120px */
-  /* background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 1em; 
   box-sizing: border-box;
-}  */
+} 
 
-/* .my_card article img {
+.my_card article img {
   max-height: 100%;
   float: right;
-} */
+}
 
 /* Set font size and line height for h2 */
-/* .my_card header h2 {
+.my_card header h2 {
   font-size: 2em; 
   line-height: 1.5em; 
   text-align: left;
-} */
+}
 
 /* Set font size and line height for p inside the footer */
-/* .my_card footer p {
-  font-size: 1.5em; /* 15px */
-  /* line-height: 2em; /* Centering within 30px content height */
-  /* text-align: center; */ 
-/* } */ 
+.my_card footer p {
+  font-size: 1.5em;
+  line-height: 2em;
+  text-align: center; 
+} 
 
 /* Paragraph inside article */
-/* .my_card article p {
-  padding-left: 1em; /* Align left edge with other text */
-  /* color: #f0f0f0; /* Light color for readability */
-/* } */
+.my_card article p {
+  padding-left: 1em;
+  color: #f0f0f0;
+}
