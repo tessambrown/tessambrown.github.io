@@ -37,16 +37,6 @@ p {
   margin: 0;
 }
 
-/* styles specific to the body of the business card */
-.card {
-  width: 35em;
-  height: 22em;
-  margin: 5em auto;
-  background-color: red;
-  border: 0.2em solid black;
-  border-radius: 1.5em;
-}
-
 .card article {
   height: 12em; /* 120px */
   background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
