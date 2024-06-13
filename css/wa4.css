@@ -21,6 +21,13 @@ html {
   border-radius: 1.5em 1.5em 0 0;
 }
 
+.card header,
+.card footer {
+  height: 5em; 
+  padding: 1em; 
+  box-sizing: border-box;
+}
+
 /* styles specific to the body of the business card */
 .card {
   width: 35em;
