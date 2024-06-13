@@ -65,6 +65,6 @@ html {
 /* styles specific to header and footer */
 
 .card header, .card footer {
-  height: 5em;
-  padding: 1em;
+  height: 1.875em;
+  padding: 0.625em;
 }
