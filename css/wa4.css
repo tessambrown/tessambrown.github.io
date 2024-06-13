@@ -51,13 +51,13 @@ h1, p {
 
 
 .card h2 {
-  font-size: 1.25em;
+  font-size: 2em;
   line-height: 1.25em;
 }
 
 .card footer p {
   font-size: 1.5em;
-  line-height: 2em;
+  line-height: 1.5em;
   text-align: center; 
 }
 
