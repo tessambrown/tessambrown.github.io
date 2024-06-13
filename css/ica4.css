@@ -19,10 +19,6 @@ ul {
     padding: 1rem;
 }
 
-a:hover {
-  color: green; 
-}
-
 body {
   background-color: #fff;
   color: #333;
@@ -39,4 +35,8 @@ body {
 a:link,
 a:visited {
   color: #fb6542;
+}
+
+a:hover {
+  color: green; 
 }
