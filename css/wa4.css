@@ -55,8 +55,8 @@ h2, p {
 /* Set font size and line height for h2 */
 .card header h2 {
   font-size: 2em; /* 20px */
-  line-height: 1.5em;
-  text-align: left; 
+  line-height: 1.5em; /* Centering within 30px content height */
+  text-align: left; /* Align text to the left */
 }
 
 /* Set font size and line height for p inside the footer */
@@ -72,3 +72,4 @@ h2, p {
   color: #e3e3e3; /* Light color for readability */
 }
 
+/* personal buisness card */
