@@ -1,4 +1,4 @@
-/* General styles - put these straight into your stylesheet */
+/* General styles - put these straight into your stylesheet
 body {
   margin: 0;
 }
@@ -9,19 +9,162 @@ html {
   background-color: #ccc;
 }
 
-/* styles specific to the header */
+styles specific to the header
 .card header {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
   border-radius: 0 0 1.5em 1.5em;
 }
 
 /* styles specific to the footer */
-.card footer {
+/* .card footer {
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
   border-radius: 1.5em 1.5em 0 0;
-}
+} */
 
 /* styles specific to the header and footer */
+/* .card header,
+.card footer {
+  height: 5em; /* 50px */
+  /* padding: 1em; /* 10px on all sides */
+  /* box-sizing: border-box; /* Include padding in the height calculation */
+/* } */ */ */ */
+
+/* Reset default margin for h2 and p */
+/* h2,
+p {
+  margin: 0;
+} */
+
+/* styles specific to the body of the business card */
+/* .card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+} */
+
+/* .card article {
+  height: 12em; /* 120px */
+  /* background-color: rgba(0, 0, 0, 0.5); 
+  padding: 1em; 
+  box-sizing: border-box;
+} */ */
+
+/* .card article img {
+  max-height: 100%;
+  float: right;
+} */
+
+/* Set font size and line height for h2 */
+/* .card header h2 {
+  font-size: 2em; 
+  line-height: 1.5em; 
+  text-align: left;
+} */
+
+/* Set font size and line height for p inside the footer */
+/* .card footer p {
+  font-size: 1.5em; 
+  line-height: 2em; 
+  text-align: center;
+} */
+
+/* Paragraph inside article */
+/* .card article p {
+  padding-left: 1em;
+  color: #f0f0f0;
+} */
+
+/* personal buisness card */
+/* styles specific to the header */
+/* .my_card header {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+} */
+
+/* styles specific to the footer */
+/* .my_card footer {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+} */
+
+/* styles specific to the header and footer */
+/* .my_card header,
+.my_card footer {
+  height: 5em; /* 50px */
+  /* padding: 1em; /* 10px on all sides */
+  /* box-sizing: border-box; /* Include padding in the height calculation */
+/* }  */ */
+
+/* Reset default margin for h2 and p */
+/* h2,
+p {
+  margin: 0;
+} */
+
+/* styles specific to the body of the business card */
+/* .my_card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: #054e98;
+  border: 0.2em solid #04356a;
+  border-radius: 1.5em;
+} */
+
+/* .my_card article {
+  height: 12em; /* 120px */
+  /* background-color: rgba(0, 0, 0, 0.5); 
+  padding: 1em; 
+  box-sizing: border-box;
+}  */
+
+/* .my_card article img {
+  max-height: 100%;
+  float: right;
+} */
+
+/* Set font size and line height for h2 */
+/* .my_card header h2 {
+  font-size: 2em; 
+  line-height: 1.5em; 
+  text-align: left;
+} */
+
+/* Set font size and line height for p inside the footer */
+/* .my_card footer p {
+  font-size: 1.5em; /* 15px */
+  /* line-height: 2em; /* Centering within 30px content height */
+  /* text-align: center; */ 
+/* } */ 
+
+/* Paragraph inside article */
+/* .my_card article p {
+  padding-left: 1em; /* Align left edge with other text */
+  /* color: #f0f0f0; /* Light color for readability */
+/* } */
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica Neue', Arial, 'sans-serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+/* styles specific to both cards */
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
 .card header,
 .card footer {
   height: 5em; /* 50px */
@@ -29,20 +172,14 @@ html {
   box-sizing: border-box; /* Include padding in the height calculation */
 }
 
-/* Reset default margin for h2 and p */
-h2,
-p {
-  margin: 0;
+.card header {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
 }
 
-/* styles specific to the body of the business card */
-.card {
-  width: 35em;
-  height: 22em;
-  margin: 5em auto;
-  background-color: red;
-  border: 0.2em solid black;
-  border-radius: 1.5em;
+.card footer {
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
 }
 
 .card article {
@@ -55,6 +192,11 @@ p {
 .card article img {
   max-height: 100%;
   float: right;
+}
+
+/* Reset default margin for h2 and p */
+h2, p {
+  margin: 0;
 }
 
 /* Set font size and line height for h2 */
@@ -77,71 +219,8 @@ p {
   color: #f0f0f0; /* Light color for readability */
 }
 
-/* personal buisness card */
-/* styles specific to the header */
-.my_card header {
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
-  border-radius: 0 0 1.5em 1.5em;
-}
-
-/* styles specific to the footer */
-.my_card footer {
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
-  border-radius: 1.5em 1.5em 0 0;
-}
-
-/* styles specific to the header and footer */
-.my_card header,
-.my_card footer {
-  height: 5em; /* 50px */
-  padding: 1em; /* 10px on all sides */
-  box-sizing: border-box; /* Include padding in the height calculation */
-}
-
-/* Reset default margin for h2 and p */
-h2,
-p {
-  margin: 0;
-}
-
-/* styles specific to the body of the business card */
+/* Specific styles for the second card */
 .my_card {
-  width: 35em;
-  height: 22em;
-  margin: 5em auto;
   background-color: #054e98;
-  border: 0.2em solid #04356a;
-  border-radius: 1.5em;
-}
-
-.my_card article {
-  height: 12em; /* 120px */
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 1em; 
-  box-sizing: border-box;
-}
-
-.my_card article img {
-  max-height: 100%;
-  float: right;
-}
-
-/* Set font size and line height for h2 */
-.my_card header h2 {
-  font-size: 2em; 
-  line-height: 1.5em; 
-  text-align: left;
-}
-
-/* Set font size and line height for p inside the footer */
-.my_card footer p {
-  font-size: 1.5em; /* 15px */
-  line-height: 2em; /* Centering within 30px content height */
-  text-align: center;
-}
-
-/* Paragraph inside article */
-.my_card article p {
-  padding-left: 1em; /* Align left edge with other text */
-  color: #f0f0f0; /* Light color for readability */
+  border-color: #04356a;
 }
