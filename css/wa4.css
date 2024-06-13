@@ -35,32 +35,19 @@ html {
 }
 
 /* styles specific to the header and footer */
-.card header,
-.card footer {
-  height: 5em; /* 50px */
-  padding: 1em; /* 10px on all sides */
-  box-sizing: border-box; /* Include padding in the height calculation */
+.card header, .card footer {
+  height: 5em; 
+  padding: 1em;
 }
 
 /* Reset default margin for h2 and p */
-h2,
-p {
+h2, p {
   margin: 0;
-}
-
-/* styles specific to the body of the business card */
-.card {
-  width: 35em;
-  height: 22em;
-  margin: 5em auto;
-  background-color: red;
-  border: 0.2em solid black;
-  border-radius: 1.5em;
 }
 
 .card article {
   height: 12em; /* 120px */
-  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.3); 
   padding: 1em;
 }
 
