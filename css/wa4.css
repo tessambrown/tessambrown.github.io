@@ -128,7 +128,7 @@ p {
 
 /* Set font size and line height for h2 */
 .card header h2 {
-  font-size: 2em; /
+  font-size: 2em; 
   line-height: 1.5em; 
   text-align: left;
 }
