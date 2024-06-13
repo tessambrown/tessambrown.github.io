@@ -31,20 +31,27 @@ html {
   border-radius: 1.5em;
 }
 
-/* styles specific to the header and footer */
-.card header, .card footer {
-  height: 5em; 
-  padding: 1em;
-}
-
-h2, p {
+/* Reset default margin for h2 and p */
+h2,
+p {
   margin: 0;
 }
 
+/* styles specific to the body of the business card */
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
 .card article {
-  height: 12em;
-  background-color: rgba(0, 0, 0, 0.3); 
-  padding: 1em;
+  height: 12em; /* 120px */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+  padding: 1em; /* Ensure content padding matches other elements */
+  box-sizing: border-box;
 }
 
 .card article img {
@@ -54,22 +61,20 @@ h2, p {
 
 /* Set font size and line height for h2 */
 .card header h2 {
-  font-size: 2em; /* 20px */
-  line-height: 1.5em; /* Centering within 30px content height */
-  text-align: left; /* Align text to the left */
+  font-size: 2em; 
+  line-height: 1.5em;
+  text-align: left;
 }
 
 /* Set font size and line height for p inside the footer */
 .card footer p {
-  font-size: 1.5em; 
+  font-size: 1.5em;
   line-height: 2em; 
   text-align: center;
 }
 
 /* Paragraph inside article */
 .card article p {
-  padding-left: 1em; /* Align left edge with other text */
-  color: #e3e3e3; /* Light color for readability */
+  padding-left: 1em;
+  color: #e2e2e2; 
 }
-
-/* personal buisness card */
