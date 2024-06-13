@@ -77,6 +77,8 @@ p {
   color: #f0f0f0;
 }
 
+
+
 /* personal buisness card */
 /* styles specific to the header */
 .mycard header {
@@ -115,7 +117,7 @@ p {
   box-sizing: border-box;
 } 
 
-.my_card article a {
+.my_card article img {
   max-height: 100%;
   float: right;
 }
