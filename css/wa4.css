@@ -50,7 +50,7 @@ h1, p {
 }
 
 
-/* .card h2 {
+.card h2 {
   font-size: 2em;
   line-height: 1.25em;
 }
@@ -59,12 +59,12 @@ h1, p {
   font-size: 1.5em;
   line-height: 1.5em;
   text-align: center; 
-} */
+}
 
 /* styles specific to header and footer */
 
 .card header, .card footer {
-  height: 5em;
+  height: 7em;
   padding: 1em;
   box-sizing: border-box; 
 }
