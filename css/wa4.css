@@ -34,37 +34,59 @@ html {
   border-radius: 1.5em;
 }
 
-.card article img {
-  max-height: 100%;
-  max-width: 100%;
-  display: block;
-  float: right; 
+/* styles specific to the header and footer */
+.card header,
+.card footer {
+  height: 5em; /* 50px */
+  padding: 1em; /* 10px on all sides */
+  box-sizing: border-box; /* Include padding in the height calculation */
 }
 
-.card h1, p {
+/* Reset default margin for h2 and p */
+h2,
+p {
   margin: 0;
 }
 
+/* styles specific to the body of the business card */
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+
 .card article {
-  height: 7.5em;
-  background-color: rgba(0,0,0,0.3);
+  height: 12em; /* 120px */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  padding: 1em; /* Ensure content padding matches other elements */
+  box-sizing: border-box;
 }
 
-
-.card h2 {
-  font-size: 2em;
-  line-height: 1.25em;
+.card article img {
+  max-height: 100%;
+  float: right;
 }
 
+/* Set font size and line height for h2 */
+.card header h2 {
+  font-size: 2em; /* 20px */
+  line-height: 1.5em; /* Centering within 30px content height */
+  text-align: center;
+}
+
+/* Set font size and line height for p inside the footer */
 .card footer p {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  text-align: center; 
+  font-size: 1.5em; /* 15px */
+  line-height: 2em; /* Centering within 30px content height */
+  text-align: center;
 }
 
-/* styles specific to header and footer */
-
-.card header, .card footer {
-  height: 1.875em;
-  padding: 0.625em;
+/* Paragraph inside article */
+.card article p {
+  padding-left: 1em; /* Align left edge with other text */
+  color: #f0f0f0; /* Light color for readability */
 }
+
