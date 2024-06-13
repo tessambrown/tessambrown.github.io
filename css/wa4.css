@@ -131,7 +131,7 @@ p {
 
 /* Set font size and line height for p inside the footer */
 .mycard footer p {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 2em;
   text-align: center; 
 } 
