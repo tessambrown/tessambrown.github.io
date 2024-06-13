@@ -36,8 +36,9 @@ html {
 
 .card article img {
   max-height: 100%;
-  float: right;
-  object-fit: cover; 
+  max-width: 100%;
+  display: block;
+  float: right; 
 }
 
 .card h1, p {
@@ -57,7 +58,7 @@ html {
 }
 
 .card footer p {
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.5em;
   text-align: center; 
 }
