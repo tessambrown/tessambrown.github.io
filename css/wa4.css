@@ -60,7 +60,6 @@ h2, p {
 .card header h2 {
   font-size: 2em; /* 20px */
   line-height: 1.5em; /* Centering within 30px content height */
-  text-align: left;
 }
 
 /* Set font size and line height for p inside the footer */
