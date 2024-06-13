@@ -117,7 +117,7 @@ p {
   box-sizing: border-box;
 } 
 
-.my_card article img {
+.my_card img {
   max-height: 100%;
   float: right;
 }
