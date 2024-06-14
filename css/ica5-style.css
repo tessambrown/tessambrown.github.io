@@ -47,7 +47,6 @@
   article {
     background-image: url(/img/top-image.png);
     background-position: top;
-    background-repeat: no-repeat;
     position: absolute;
   }
 
