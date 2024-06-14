@@ -18,7 +18,7 @@
     position: relative;
     background: 
         url(/img/top-image.png) no-repeat top,
-        url(/img/botto-image.png) no-repeat bottom,
+        url(/img/bottom-image.png) no-repeat bottom,
         linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 0.3) 100%);
     background-color: white;
     border-top: 1mm solid red; 
