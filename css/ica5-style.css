@@ -45,7 +45,7 @@
 
   article {
     background-image: url(/img/top-image.png), url(/img/bottom-image.png);
-    background-position: top-left, bottom-right;
+    background-position: top-left, bottom-left;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
