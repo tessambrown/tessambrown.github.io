@@ -43,10 +43,12 @@
     background-color: white;
   }
 
-  body {
+  article {
     background-image: url(/img/top-image.png), url(/img/bottom-image.png);
     background-position: top-left, bottom-right;
+    background-repeat: no-repeat;
     background-attachment: fixed;
   }
 
-  
+
+
