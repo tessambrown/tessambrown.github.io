@@ -8,7 +8,7 @@
   
   body {
     margin: 0;
-    background: white;
+    background: #ccc;
   }
   
   article {
@@ -16,8 +16,8 @@
     height: 297mm;
     margin: 20px auto;
     position: relative;
-    background-image: url(/img/top-image.png);
-    background-position: top;
+    background-image: url(/img/top-image.png), url(/img/bottom-image.png);
+    background-position: top, botom;
     background-repeat: no-repeat;
     position: fixed;
   }
