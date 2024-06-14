@@ -51,6 +51,6 @@
   }
   
   /* Your CSS below here */
-  html {
+  html::after{
     background-color: white;
   }
