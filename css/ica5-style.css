@@ -44,7 +44,6 @@
     color: white;
     text-shadow: 1px 1px 1px black;
     background: url(/img/logo.png);
-    background-size: cover; 
   }
 
   h1::after{ 
