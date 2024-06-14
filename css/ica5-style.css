@@ -16,10 +16,13 @@
     height: 297mm;
     margin: 20px auto;
     position: relative;
-    background-image: url(/img/top-image.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    position: relative;
+    background: 
+        url(/img/top-image.png) no-repeat top,
+        url(/img/botto-image.png) no-repeat bottom,
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(0, 0, 0, 0.3) 100%);
+    background-color: white;
+    border-top: 1mm solid red; 
+    border-bottom: 1mm solid red; 
   }
   
   address {
@@ -45,3 +48,6 @@
   }
   
   /* Your CSS below here */
+  html {
+    background-color: white;
+  }
