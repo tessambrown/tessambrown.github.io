@@ -43,7 +43,7 @@
     padding: 44px 0;
     color: white;
     text-shadow: 1px 1px 1px black;
-    background-image: url(/img/logo.png);
+    background: url(/img/logo.png);
   }
   
   /* Your CSS below here */
