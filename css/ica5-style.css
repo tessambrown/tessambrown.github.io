@@ -36,6 +36,7 @@
     padding: 44px 0;
     color: white;
     text-shadow: 1px 1px 1px black;
+    background-image: url(/img/logo.png);
   }
   
   /* Your CSS below here */
@@ -44,8 +45,8 @@
   }
 
   article {
-    background-image: url(/img/top-image.png), url(/img/bottom-image.png);
-    background-position: top-left, bottom-left;
+    background-image: url(/img/top-image.png);
+    background-position: top-left;
     background-repeat: no-repeat;
     position: absolute;
   }
