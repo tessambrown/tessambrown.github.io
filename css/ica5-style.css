@@ -44,7 +44,7 @@
     background-color: white;
   }
 
-  article {
+  div {
     background-image: url(/img/top-image.png);
     background-position: (0,0);
     background-repeat: no-repeat;
