@@ -45,7 +45,7 @@
     text-shadow: 1px 1px 1px black;
   }
 
-  h1::after {
+  h1::before {
     background: url(/img/logo.png) no-repeat center;
     background-size: cover;
     filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
