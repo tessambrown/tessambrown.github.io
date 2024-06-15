@@ -1,6 +1,6 @@
 
 .background {
-    background-image: url(/img/nba.jpg);
+    background: url(/img/nba.jpg);
     background-position: top center;
     background-size: cover;
     position:fixed;
