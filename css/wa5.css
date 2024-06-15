@@ -1,0 +1,19 @@
+
+.background {
+    background-image: url(/img/nba.jpg);
+    background-position: top center;
+    background-size: cover;
+    position:fixed;
+}
+
+.score {
+    background-image: url(/img/final-score.png);
+}
+
+.nbalogo {
+    background-image: url(/img/nba-logo.png);
+}
+
+.espnlogo {
+    background-image: url(/img/espn-logo.png);
+}
