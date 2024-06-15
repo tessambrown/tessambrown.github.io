@@ -1,12 +1,12 @@
 
-.background {
+body {
     background: url(/img/nba.jpg);
     background-position: top center;
     background-size: cover;
     position:fixed;
 }
 
-.score {
+/* .score {
     background-image: url(/img/final-score.png);
 }
 
@@ -16,4 +16,4 @@
 
 .espnlogo {
     background-image: url(/img/espn-logo.png);
-}
+} */
