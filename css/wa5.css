@@ -8,11 +8,13 @@ body {
     position:fixed;
 }
 
-/* .score {
+.score {
     background-image: url(/img/final-score.png);
+    background-position: bottom center;
+    position:fixed;
 }
 
-.nbalogo {
+/* .nbalogo {
     background-image: url(/img/nba-logo.png);
 }
 
