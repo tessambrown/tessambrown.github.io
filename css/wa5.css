@@ -9,21 +9,18 @@ body {
 
 .score div img{
     background: url(/img/final-score.png) no-repeat bottom;
-    height: 5%;
-    width: 5%;
+    height: 50px;
     position: absolute
 }
 
 .nbalogo {
     background: url(/img/nba-logo.png) no-repeat top right;
-    height: 5%;
-    width: 5%;
+    height: 50px;
     position: absolute;
 }
 
 .espnlogo {
     background: url(/img/espn-logo.png) no-repeat top left;
-    height: 5%;
-    width: 5%;
+    height: 50px;
     position: absolute;
 }
