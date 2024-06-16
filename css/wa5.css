@@ -8,18 +8,23 @@ body {
 }
 
 .score {
-    background: url(/img/final-score.png) no-repeat center center;
-    background-size: contain; /* Ensure the image fits within the div */
+    background: url(/img/final-score.png) no-repeat bottom center;
+    /* background-size: contain; Ensure the image fits within the div */
     height: 50%; 
     width: 50%; 
-    align-self: center; /* Center the score div horizontally */
     margin-bottom: 10px; /* Adjust bottom margin as needed */
 }
 
- /* .nbalogo {
+.nbalogo {
     background: url(/img/nba-logo.png) no-repeat top left;
+    height: 50%;
+    width: 50%;
+    margin-top: 10px
 }
 
 .espnlogo {
-    background: url(/img/espn-logo.png) no-repeat top ;
-} */
+    background: url(/img/espn-logo.png) no-repeat top right;
+    height: 50%;
+    width: 50%;
+    margin-top: 10px;
+}
