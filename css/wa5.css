@@ -8,8 +8,11 @@ body {
     position:fixed;
 }
 
-.score img{
-    max-height: 50%;
+.score{
+    background: url(/img/final-score.png) no-repeat bottom;
+    height: 25%;
+    width: 25%;
+    position: relative;
 }
 
  /* .nbalogo {
