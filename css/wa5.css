@@ -15,25 +15,24 @@ body {
     position: absolute;
     bottom: 10px; 
     left: 50%;
-    /* transform: translateX(-50%); */
 }
 
 .nbalogo {
     background: url(/img/nba-logo.png) no-repeat center center;
     background-size: contain;
-    height: 10vh; /* Adjust as needed */
-    width: 10vw; /* Adjust as needed */
+    height: 10vh; 
+    width: 10vw; 
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
+    top: 10px; 
+    right: 10px; 
 }
 
 .espnlogo {
     background: url(/img/espn-logo.png) no-repeat center center;
     background-size: contain;
-    height: 10vh; /* Adjust as needed */
-    width: 10vw; /* Adjust as needed */
+    height: 10vh; 
+    width: 10vw;
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
+    top: 10px;
+    left: 10px;
 }
