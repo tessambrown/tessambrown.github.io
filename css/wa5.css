@@ -7,26 +7,14 @@ body {
     position:fixed;
 }
 
-.score {
-    background: url(/img/final-score.png) no-repeat bottom center;
-    background-size: contain;
-    height: 50%; 
-    width: 50%; 
-    margin-bottom: 10px; /* Adjust bottom margin as needed */
+.score div img{
+    max-height: 50%;
 }
 
-.nbalogo {
-    background: url(/img/nba-logo.png) no-repeat top left;
-    background-size: contain;
-    height: 50%;
-    width: 50%;
-    margin-top: 10px
+.nbalogo div img {
+    max-height: 50%;
 }
 
-.espnlogo {
-    background: url(/img/espn-logo.png) no-repeat top right;
-    background-size: contain; 
-    height: 50%;
-    width: 50%;
-    margin-top: 10px;
+.espnlogo div img {
+    max-height: 50%;
 }
