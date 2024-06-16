@@ -1,5 +1,5 @@
 body {
-    background: url(/img/nba.jpg);
+    background-image: url(/img/nba.jpg);
     height: 100%;
     width: 100%;
     background-position: top center;
@@ -8,13 +8,22 @@ body {
 }
 
 .score div img{
-    max-height: 5%;
+    background: url(/img/final-score.png) no-repeat bottom;
+    height: 5%;
+    width: 5%;
+    position: absolute
 }
 
-.nbalogo div img {
-    max-height: 5%;
+.nbalogo {
+    background: url(/img/nba-logo.png) no-repeat top right;
+    height: 5%;
+    width: 5%;
+    position: absolute;
 }
 
-.espnlogo div img {
-    max-height: 5%;
+.espnlogo {
+    background: url(/img/espn-logo.png) no-repeat top left;
+    height: 5%;
+    width: 5%;
+    position: absolute;
 }
