@@ -10,20 +10,20 @@ body {
 .score div img{
     background-image: url(/img/final-score.png);
     background-position: bottom center;
-    height: 50px;
+    height: 100px;
     position: fixed;
 }
 
 .nbalogo {
     background: url(/img/nba-logo.png);
     background-position: top right;
-    height: 50px;
+    height: 100px;
     position: fixed;
 }
 
 .espnlogo {
     background-image: url(/img/espn-logo.png);
     background-position: top left;
-    height: 50px;
+    height: 100px;
     position: fixed;
 }
