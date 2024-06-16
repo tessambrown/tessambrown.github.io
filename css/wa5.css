@@ -10,8 +10,8 @@ body {
 .score {
     background: url(/img/final-score.png) no-repeat center center;
     background-size: contain;
-    height: 10%; 
-    width: 10%; 
+    height: 50%; 
+    width: 50%; 
     position: absolute;
     bottom: 10px; 
     left: 50%;
