@@ -15,7 +15,7 @@ body{
 #text1 {
     left: 150%;
     top: 250px;
-    
+    float: left;
 }
 
 #box2{
@@ -28,6 +28,9 @@ body{
 }
 
 #text2 {
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
 
 #box3{

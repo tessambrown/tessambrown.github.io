@@ -15,10 +15,10 @@
 }
 
 .score {
-    background: url(/img/final-score.png) no-repeat center center;
+    background: url(/img/final-score.png) no-repeat bottom center;
     background-size: contain;
-    height: 30vh; 
-    width: 30vw; 
+    height: 50vh; 
+    width: 50vw; 
     position: absolute;
     margin-bottom: 20px;
 }
