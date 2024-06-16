@@ -10,20 +10,23 @@ body {
 .score {
     background: url(/img/final-score.png);
     background-position: bottom center;
-    height: 100px;
+    height: 1%;
+    width: 1%;
     position: fixed;
 }
 
 .nbalogo {
     background: url(/img/nba-logo.png);
     background-position: top right;
-    height: 100px;
+    height: 1%;
+    width: 1%;
     position: fixed;
 }
 
 .espnlogo {
     background: url(/img/espn-logo.png);
     background-position: top left;
-    height: 100px;
+    height: 1%;
+    width: 1%;
     position: fixed;
 }
