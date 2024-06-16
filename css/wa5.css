@@ -9,7 +9,7 @@ body {
 
 .score {
     background: url(/img/final-score.png) no-repeat bottom center;
-    /* background-size: contain; Ensure the image fits within the div */
+    background-size: contain;
     height: 50%; 
     width: 50%; 
     margin-bottom: 10px; /* Adjust bottom margin as needed */
@@ -17,6 +17,7 @@ body {
 
 .nbalogo {
     background: url(/img/nba-logo.png) no-repeat top left;
+    background-size: contain;
     height: 50%;
     width: 50%;
     margin-top: 10px
@@ -24,6 +25,7 @@ body {
 
 .espnlogo {
     background: url(/img/espn-logo.png) no-repeat top right;
+    background-size: contain; 
     height: 50%;
     width: 50%;
     margin-top: 10px;
