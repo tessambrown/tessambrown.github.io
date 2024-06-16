@@ -1,18 +1,20 @@
-
 body {
-    background: url(/img/nba.jpg);
-    height: 100%;
-    width: 100%;
-    background-position: top center;
+    background: url(/img/nba.jpg) no-repeat center center;
     background-size: cover;
-    position:fixed;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Ensure the .score div is at the bottom */
 }
 
-.score{
-    background: url(/img/final-score.png) no-repeat bottom;
-    height: 25%;
-    width: 25%;
-    position: relative;
+.score {
+    background: url(/img/final-score.png) no-repeat center center;
+    background-size: contain; /* Ensure the image fits within the div */
+    height: 25vh; /* Adjust height as needed */
+    width: 25vw; /* Adjust width as needed */
+    align-self: center; /* Center the score div horizontally */
+    margin-bottom: 10px; /* Adjust bottom margin as needed */
 }
 
  /* .nbalogo {
