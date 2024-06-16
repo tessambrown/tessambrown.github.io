@@ -17,9 +17,9 @@ body {
 }
 
  .nbalogo {
-    background: url(/img/nba-logo.png);
+    background: url(/img/nba-logo.png) no-repaet top left;
 }
 
 .espnlogo {
-    background: url(/img/espn-logo.png);
+    background: url(/img/espn-logo.png) no-repeat top ;
 }
