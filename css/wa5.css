@@ -8,19 +8,22 @@ body {
 }
 
 .score div img{
-    background: url(/img/final-score.png) no-repeat bottom;
+    background-image: url(/img/final-score.png);
+    background-position: bottom center;
     height: 50px;
-    position: absolute
+    position: fixed;
 }
 
 .nbalogo {
-    background: url(/img/nba-logo.png) no-repeat top right;
+    background: url(/img/nba-logo.png);
+    background-position: top right;
     height: 50px;
-    position: absolute;
+    position: fixed;
 }
 
 .espnlogo {
-    background: url(/img/espn-logo.png) no-repeat top left;
+    background-image: url(/img/espn-logo.png);
+    background-position: top left;
     height: 50px;
-    position: absolute;
+    position: fixed;
 }
