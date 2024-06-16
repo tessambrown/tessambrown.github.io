@@ -7,8 +7,8 @@ body {
     position:fixed;
 }
 
-.score div img{
-    background-image: url(/img/final-score.png);
+.score {
+    background: url(/img/final-score.png);
     background-position: bottom center;
     height: 100px;
     position: fixed;
@@ -22,7 +22,7 @@ body {
 }
 
 .espnlogo {
-    background-image: url(/img/espn-logo.png);
+    background: url(/img/espn-logo.png);
     background-position: top left;
     height: 100px;
     position: fixed;
