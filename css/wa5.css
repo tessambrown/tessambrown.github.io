@@ -9,7 +9,7 @@ body {
 }
 
 .score {
-    background-image: url(/img/final-score.png);
+    background-image: url(/img/final-score.png) no-repeat;
     height: 100%;
     width: 100%;
     background-position: bottom center;
