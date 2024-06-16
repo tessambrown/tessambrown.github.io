@@ -10,12 +10,12 @@ body {
 .score {
     background: url(/img/final-score.png) no-repeat center center;
     background-size: contain;
-    height: 10vh; /* Adjust as needed */
-    width: 30vw; /* Adjust as needed */
+    height: 10%; 
+    width: 10%; 
     position: absolute;
-    bottom: 10px; /* Adjust as needed */
+    bottom: 10px; 
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }
 
 .nbalogo {
