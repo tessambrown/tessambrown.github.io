@@ -10,9 +10,9 @@ body {
 .score {
     background: url(/img/final-score.png);
     background-position: bottom center;
-    height: 1%;
-    width: 1%;
-    position: fixed;
+    height: 5%;
+    width: 5%;
+    position: relative;
 }
 
 .nbalogo {
