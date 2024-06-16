@@ -4,17 +4,26 @@ body {
     height: 100vh;
     width: 100%;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center;
+}
+
+.container {
+    width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally */
 }
 
 .score {
     background: url(/img/final-score.png) no-repeat center center;
     background-size: contain;
-    height: 50%; 
-    width: 50%; 
+    height: 75%; 
+    width: 75%; 
     position: absolute;
-    bottom: 10px; 
-    left: 50%;
+    margin-bottom: 20px;
 }
 
 .nbalogo {
