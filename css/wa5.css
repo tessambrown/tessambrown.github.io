@@ -8,18 +8,14 @@ body {
     position:fixed;
 }
 
-.score {
-    background: 
-        url(/img/final-score.png) no-repeat bottom;
-    height: 50%;
-    width: 50%;
-    position: relative;
+.score img{
+    max-height: 50%;
 }
 
- .nbalogo {
+ /* .nbalogo {
     background: url(/img/nba-logo.png) no-repeat top left;
 }
 
 .espnlogo {
     background: url(/img/espn-logo.png) no-repeat top ;
-}
+} */
