@@ -17,8 +17,8 @@
 .score {
     background: url(/img/final-score.png) no-repeat center center;
     background-size: contain;
-    height: 10vh; 
-    width: 10vw; 
+    height: 30vh; 
+    width: 30vw; 
     position: absolute;
     margin-bottom: 20px;
 }
