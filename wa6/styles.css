@@ -1,4 +1,4 @@
-@media (min-height: 500px) {
+@media (min-width: 500px) {
   body {
     background-color: #fff;
     color: #333;
@@ -70,7 +70,7 @@
 }
 
 /* media query for screens smaller than 500px */
-@media (max-height: 499px) {
+@media (max-width: 499px) {
   /* smaller font for smaller screens */
   body {
     font-size: 1em;
