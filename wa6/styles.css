@@ -18,6 +18,8 @@ body {
   }
   
   .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
@@ -39,6 +41,7 @@ body {
   }
   
   nav a {
+    /* make the navigation bar items fill the available space */
     flex: 1; 
     color: #fff;
     text-decoration: none;
@@ -46,8 +49,6 @@ body {
   }
   
   .photos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 1px;
     list-style: none;
     margin: 0;
