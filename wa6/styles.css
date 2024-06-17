@@ -28,7 +28,8 @@ body {
   nav {
     /* make the navigation bar scroll with the content */
     position: sticky;
-    top: 0px; 
+    top: 0px;
+    left: 0px; 
     background-color: #000;
     padding: .5em;
   }
