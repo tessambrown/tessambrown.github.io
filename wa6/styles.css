@@ -27,7 +27,8 @@ body {
   
   nav {
     /* make the navigation bar scroll with the content */
-    position: fixed; 
+    position: sticky;
+    top: 0px; 
     background-color: #000;
     padding: .5em;
   }
@@ -51,6 +52,8 @@ body {
   .photos {
     gap: 1px;
     list-style: none;
+    height: 50%;
+    width: 50%;
     margin: 0;
     padding: 0;
   }
