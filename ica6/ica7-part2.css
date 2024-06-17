@@ -6,8 +6,6 @@ body{
 #flex-parent{
     background-color: orangered;
     display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
     gap: 10px; 
 }
 #flex-parent p{
