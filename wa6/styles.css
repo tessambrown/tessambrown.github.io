@@ -53,10 +53,9 @@ body {
   
   .photos {
     display: grid;
-    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
     list-style: none;
-    /* height: 50%;
-    width: 50%; */
     margin: 0;
     padding: 0;
   }
