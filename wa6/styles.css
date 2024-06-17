@@ -52,6 +52,8 @@ body {
   }
   
   .photos {
+    display: grid;
+    
     list-style: none;
     /* height: 50%;
     width: 50%; */
