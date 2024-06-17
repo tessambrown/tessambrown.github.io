@@ -37,7 +37,6 @@ body {
   
   nav ul {
     /* put the list items in a row */
-    flex: 1; 
     margin: 0;
     padding: 0;
     list-style: none;
@@ -45,6 +44,7 @@ body {
   
   nav a {
     /* make the navigation bar items fill the available space */ 
+    flex: 1;
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
