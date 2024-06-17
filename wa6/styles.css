@@ -19,6 +19,7 @@ body {
   
   .grid {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
@@ -51,9 +52,6 @@ body {
   }
   
   .photos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
     list-style: none;
     height: 50%;
     width: 50%;
@@ -62,6 +60,7 @@ body {
   }
 
   .photos li {
+    gap: 1px;
     display: flex;
     justify-content: center;  
   }
