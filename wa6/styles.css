@@ -28,7 +28,6 @@ body {
   nav {
     /* make the navigation bar scroll with the content */
     position: sticky;
-    display: flex;
     top: 0px;
     left: 0px; 
     background-color: #000;
@@ -37,6 +36,7 @@ body {
   
   nav ul {
     /* put the list items in a row */
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
