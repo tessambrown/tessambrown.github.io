@@ -55,15 +55,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 100px;
+    gap: 1px;
+    justify-content: center;  
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-
-  .photos li {
-    gap: 1px;
-    display: flex;
-    justify-content: center;  
   }
 
   .feature {
