@@ -22,7 +22,9 @@ body{
 
     /* animation properties */
     animation-duration: 5s;
-    animation-name: slide;
+
+    /* same name as the keyframe */
+    animation-name: box2move; 
     animation-iteration-count: infinite;
     animation-direction: alternate; 
 }
