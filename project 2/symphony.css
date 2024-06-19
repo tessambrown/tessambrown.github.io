@@ -16,7 +16,11 @@ h1 {
     font-size: 40px;
 }
 
-h2 h3 h4{
+h3 {
+    font-size: 20px;
+}
+
+h2 h4{
     font-size: 15px;
 }
 
@@ -77,7 +81,8 @@ nav a {
 
 /* general sechedule outline */
 .schedule div {
-    background-color: #dcbda1;
+    height: 300px;
+    text-align: center;
 }
 
 button {
@@ -85,26 +90,20 @@ button {
     color:#fff;
 }
 
-.type_1 {
-    height: 300px;
-    text-align: center;
-}
-
 .type_1 img {
     float: right;
     margin-right: 20px;
-    width: 200px;
+    width: 400px;
 }
 
-.type_2 {
-    height: 300px;
-    text-align: center;
-}
-
-.type_2 {
+.type_2 img{
     float: left;
     margin-left: 20px;
-    width: 200px;
+    width: 400px;
 }
 
 /* general more information outline */
+.more_information div {
+    height: 300px;
+    text-align: center;
+}
