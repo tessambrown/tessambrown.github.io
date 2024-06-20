@@ -5,7 +5,7 @@ body{
     background-color: #f2e4fd;
 }
 nav{
-    height: 50vh;
+    height: 60vh;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,7 +31,7 @@ a:focus {
 
 img{
     margin-top: 50px;
-    height: 50vh;
+    height: 70vh;
 }
 
 #purple-ball{
