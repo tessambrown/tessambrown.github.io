@@ -30,7 +30,8 @@ a:focus {
 }
 
 img{
-    height: 30vh;
+    padding: 50px;
+    height: 50vh;
 }
 
 #purple-box{

@@ -5,11 +5,11 @@ body {
 }
 
 h1 h3{
-    font-family: 'Archivo Black', sans-serif;
+    font: Impact, fantasy;
 }
 
 h2 p {
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
+    font: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 }
 
 /* font size */
@@ -86,6 +86,7 @@ button {
 }
 
 .type_1 img {
+    size: 50%;
     float: right;
     border-radius: 10px; 
     margin-right: 20px;
@@ -94,6 +95,7 @@ button {
 }
 
 .type_2 img{
+    size: 50%;
     float: left;
     border-radius: 10px; 
     margin-left: 20px;
