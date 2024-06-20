@@ -37,17 +37,17 @@ nav a:focus {
 }
 
 img {
-    margin-top: 50px;
+    margin-top: 20px;
     height: 70vh;
 }
 
 #purple-box {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: #7c5295;
     position: absolute;
     top: 90vh; /* Adjust based on the image height and desired position */
-    animation: move-side-to-side 5s infinite alternate;
+    animation: move-side-to-side 7s infinite alternate;
 }
 
 @keyframes move-side-to-side {
