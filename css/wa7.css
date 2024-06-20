@@ -1,62 +1,55 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f2e4fd;
 }
-nav{
+
+nav {
     height: 60vh;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height:20px;
+    justify-content: center; /* Center the nav items */
+    align-items: center;
+    gap: 10px; /* Optional: Add gap between nav items */
 }
-nav a{
-    flex: 1;
+
+nav a {
     background-color: #7c5295;
-    color: white; 
-    width:10vw;
+    color: white;
     border: 1px solid;
-    padding: 0.5rem; 
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
     text-align: center;
     text-decoration: none;
     transition: all 0.5s ease-out;
+    flex-grow: 1; 
+    white-space: nowrap;
 }
-
-a:hover,
-a:focus {
+nav a:hover,
+nav a:focus {
     background-color: white;
     color: #7c5295;
 }
 
-img{
-    margin-top: 50px;
+img {
+    margin: 50px;
     height: 70vh;
 }
 
-#purple-ball{
+#purple-box {
+    width: 50px;
+    height: 50px;
     background-color: #7c5295;
-    width: 20px;
-    height:20px;
-    border-radius: 50%;
     position: absolute;
-    left:5vw;
-    top:0;
-
-    animation-duration: 5s;
-
-    /* same name as the keyframe */
-    animation-name: ball-move; 
-    animation-iteration-count: infinite;
-    animation-direction: alternate; 
+    top: 90vh; /* Adjust based on the image height and desired position */
+    animation: move-side-to-side 5s infinite alternate;
 }
-@keyframes ball-move {
+
+@keyframes move-side-to-side {
     0% {
-        top: 0px;
-        left: 0px;
+        left: 0;
     }
     100% {
-        top: 100px;
-        left: 100px; 
+        left: calc(100vw - 50px); /* Adjust based on the box width */
     }
 }
