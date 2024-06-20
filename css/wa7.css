@@ -7,7 +7,8 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 60px;
+    color: #7c5295;
 }
 
 nav {
@@ -20,7 +21,7 @@ nav {
 
 nav a {
     flex: 1;
-    height: 1vh;  
+    height: 5vh;  
     background-color: #7c5295;
     color: white;
     border: 1px solid;
