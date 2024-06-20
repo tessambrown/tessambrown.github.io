@@ -48,8 +48,8 @@ nav a:focus {
 }
 
 img {
-    margin-top: 20px;
     height: 70vh;
+    filter: drop-shadow(0px 4px 6px black);
 }
 
 #purple-box {
