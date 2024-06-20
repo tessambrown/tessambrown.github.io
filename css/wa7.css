@@ -19,7 +19,8 @@ nav {
 }
 
 nav a {
-    flex: 1; 
+    flex: 1;
+    height: 1vh;  
     background-color: #7c5295;
     color: white;
     border: 1px solid;
