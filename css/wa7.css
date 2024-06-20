@@ -11,7 +11,7 @@ h1 {
 }
 
 nav {
-    height: 60vh;
+    height: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: center; /* Center the nav items */
@@ -57,7 +57,7 @@ img {
     height: 70px;
     background-color: #7c5295;
     position: absolute;
-    top: 70vh; /* Adjust based on the image height and desired position */
+    top: 97vh; /* Adjust based on the image height and desired position */
     animation: move-side-to-side 7s infinite alternate;
 }
 
