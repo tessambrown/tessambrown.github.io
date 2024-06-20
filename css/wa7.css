@@ -33,12 +33,29 @@ img{
     height: 30vh;
 }
 
-#red-ball{
-    background-color: crimson;
+#purple-box{
+    background-color: #7c5295;
     width: 20px;
     height:20px;
     border-radius: 50%;
     position: absolute;
     left:5vw;
     top:0;
+
+    animation-duration: 5s;
+
+    /* same name as the keyframe */
+    animation-name: box-move; 
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+@keyframes box-move {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    100% {
+        top: 100px;
+        left: 100px; 
+    }
 }
