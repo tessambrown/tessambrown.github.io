@@ -1,6 +1,7 @@
 /* general body desgin */
 body {
     background-color: #f0e7d6;
+    text-align: center;
 }
 
 h1 h3{
@@ -66,17 +67,7 @@ nav a {
 /* make then the same font color */
 .page_top {
     color: #daa38f;
-    height: 400pxpx; 
-}
-
-/* archivo black font */
-.page_top h1 {
-    text-align: center;
-}
-
-/* serif font */
-.page_top h2 {
-    text-align: center;
+    height: 400px; 
 }
 
 /* general sechedule outline */
