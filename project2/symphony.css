@@ -32,6 +32,14 @@ img {
     display: block;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+}
+
 /* general navigation bar desgin */
 nav {
     /* make the navigation bar scroll with the content */
