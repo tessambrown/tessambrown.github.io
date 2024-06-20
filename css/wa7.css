@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2e4fd;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+}
+nav a{
+    flex: 1;
+    background-color: #7c5295;
+    color: white; 
+    width:10vw;
+    border: 1px solid;
+    padding: 0.5rem; 
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5 ease-out;
+}
+
+a:hover,
+a:focus {
+    background-color: white;
+    color: #7c5295;
+}
+
+img{
+    height: 30vh;
+}
+
+#red-ball{
+    background-color: crimson;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+}
