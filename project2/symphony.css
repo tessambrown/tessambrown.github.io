@@ -60,8 +60,6 @@ nav a {
     text-decoration: none;
     padding: .5em 1em;
 
-    /* archivo black font */
-
 }
 
 /* make then the same font color */
@@ -72,6 +70,7 @@ nav a {
 
 /* general sechedule outline */
 .schedule div {
+    display: flex;
     height: 200px;
     text-align: center;
     clear: both;
