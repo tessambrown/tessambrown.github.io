@@ -13,6 +13,7 @@ h1 {
 
 nav {
     display: flex;
+    height: 5vh;
     flex-direction: row;
     justify-content: center; /* Center the nav items */
     align-items: center;
@@ -21,7 +22,6 @@ nav {
 
 nav a {
     flex: 1;
-    margin: 5vh;
     background-color: #7c5295;
     color: white;
     border: 1px solid;
