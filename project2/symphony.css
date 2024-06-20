@@ -5,11 +5,11 @@ body {
 }
 
 h1 h3{
-    font: Impact, fantasy;
+    font-family: Impact, sans-serif;
 }
 
 h2 p {
-    font: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 /* font size */
