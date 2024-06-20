@@ -21,7 +21,7 @@ nav {
 
 nav a {
     flex: 1;
-    height: 5vh;  
+    margin: 5vh;
     background-color: #7c5295;
     color: white;
     border: 1px solid;
