@@ -20,15 +20,26 @@ nav {
 }
 
 nav a {
+    flex: 1; 
     background-color: #7c5295;
     color: white;
     border: 1px solid;
-    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    padding: 0.5rem 1rem;
     text-align: center;
     text-decoration: none;
     transition: all 0.5s ease-out;
-    flex-grow: 1; 
+    
     white-space: nowrap;
+
+    /* flex: 1;
+    background-color: #7c5295;
+    color: white;
+    width: 10vw;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out */
 }
 nav a:hover,
 nav a:focus {
