@@ -30,11 +30,11 @@ a:focus {
 }
 
 img{
-    padding: 50px;
+    margin-top: 50px;
     height: 50vh;
 }
 
-#purple-box{
+#purple-ball{
     background-color: #7c5295;
     width: 20px;
     height:20px;
@@ -46,11 +46,11 @@ img{
     animation-duration: 5s;
 
     /* same name as the keyframe */
-    animation-name: box-move; 
+    animation-name: ball-move; 
     animation-iteration-count: infinite;
     animation-direction: alternate; 
 }
-@keyframes box-move {
+@keyframes ball-move {
     0% {
         top: 0px;
         left: 0px;
