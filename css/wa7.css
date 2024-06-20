@@ -57,7 +57,7 @@ img {
     height: 70px;
     background-color: #7c5295;
     position: absolute;
-    top: 90vh; /* Adjust based on the image height and desired position */
+    top: 70vh; /* Adjust based on the image height and desired position */
     animation: move-side-to-side 7s infinite alternate;
 }
 
