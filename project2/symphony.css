@@ -105,19 +105,19 @@ nav a:focus
 /* Media Query for screen sizes of 400px or less */
 @media (max-width: 400px) {
     h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     h2 {
-        font-size: 18px;
-    }
-
-    h3 {
         font-size: 16px;
     }
 
+    h3 {
+        font-size: 15px;
+    }
+
     h4 {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     p {

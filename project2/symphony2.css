@@ -1,5 +1,11 @@
+.page_top {
+    background-image: url(mountians.jpg);
+    color: white;
+    height: 200px;
+}  
+  
   /* general body design */
-  body {
+body {
     background-color: #e4e6d9;
     text-align: center;
 }
@@ -42,11 +48,6 @@ img {
 }
 
     /* make them the same font color */
-.page_top {
-    background-image: url(mountians.jpg);
-    color: white;
-    height: 200px;
-}
     
 .schedule {
     background-color: #c0cfb2;
