@@ -1,5 +1,5 @@
   /* general body design */
-body {
+  body {
     background-color: #e4e6d9;
     text-align: center;
 }
@@ -39,6 +39,13 @@ img {
     display: block;
     border-radius: 3px;
     filter: drop-shadow(0px 4px 6px black);
+}
+
+    /* make them the same font color */
+.page_top {
+    color: white;
+    height: 200px;
+    background-image: url(mountians.jpg);
 }
     
 .schedule {
