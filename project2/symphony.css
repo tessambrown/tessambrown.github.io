@@ -36,10 +36,8 @@ p {
 }
 
 img {
-    height: 500px;
     display: block;
-    float: right; 
-    border-radius: 10px;
+    border-radius: 3px;
     filter: drop-shadow(0px 4px 6px black);
 }
 
