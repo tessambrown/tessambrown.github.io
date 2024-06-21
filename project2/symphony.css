@@ -1,4 +1,107 @@
-/* general body design */
+  /* general body design */
+body {
+    background-color: #e4e6d9;
+    text-align: center;
+}
+    
+footer {
+    background-color: #6c8776;
+    height: 30px;
+}
+    
+h1 {
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    margin-top: 10px;
+}
+    
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 20px;
+}
+    
+h3 {
+    font-family: Impact, sans-serif;
+    font-size: 20px;
+}
+    
+h4 {
+    font-family: Impact, sans-serif;
+    font-size: 15px;
+}
+    
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 12px;
+}
+    
+img {
+    display: block;
+    border-radius: 3px;
+    filter: drop-shadow(0px 4px 6px black);
+}
+    
+.schedule {
+    background-color: #c0cfb2;
+    color: white;
+}
+    
+nav {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: #6c8776;
+    padding: .5em;
+ }
+    
+nav ul {
+    /* put the list items in a row */
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    
+nav a {
+    /* make the navigation bar items fill the available space */
+    flex: 1;
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+    transition: all 0.5s ease-out;
+}
+    
+nav a:hover,
+nav a:focus
+{
+    background-color: white;
+    color: #6c8776;
+}
+    
+    /* make them the same font color */
+.page_top {
+    color: #6c8776;
+    height: 200px;
+}
+    
+/* general schedule outline */
+.more_information {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    text-align: left;
+    clear: both;
+    justify-content: space-around;
+    gap: 20px;
+}
+    
+.more_information div {
+    flex: 1 1 calc(33.333% - 20px);
+}
+        
+
+/* general body design
 body {
     background-color: #e4e6d9;
     text-align: center;
@@ -41,53 +144,52 @@ p {
     filter: drop-shadow(0px 4px 6px black);
 } */
 
-.schedule {
+/* .schedule {
     background-color: #c0cfb2;
     color: white;
-}
+} */
 
 /* general navigation bar design */
-nav {
+/* nav {
     /* make the navigation bar scroll with the content */
-    position: sticky;
+    /* position: sticky;
     top: 0px;
     left: 0px; 
     background-color: #6c8776;
-    padding: .5em;
-}
+    padding: .5em; */
+/* } 
 
 nav ul {
     /* put the list items in a row */
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
     margin: 0;
     padding: 0;
     list-style: none;
-}
+} */
   
-nav a {
-    /* make the navigation bar items fill the available space */ 
+/* nav a { 
     flex: 1; 
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
     transition: all 0.5s ease-out;
-}
+} */
 
-nav a:hover,
+/* nav a:hover,
 nav a:focus {
     background-color: white;
     color: #6c8776;
-}
+} */
 
 /* make them the same font color */
-.page_top {
+/* .page_top {
     color: #6c8776;
     height: 200px; 
-}
+} */
 
 /* general schedule outline */
-.more_information {
+/* .more_information {
     display: flex;
     flex-wrap: wrap;
     height: auto;
@@ -95,10 +197,10 @@ nav a:focus {
     clear: both;
     justify-content: space-around;
     gap: 20px;
-}
+} */
 
-.more_information div {
+/* .more_information div {
     flex: 1 1 calc(33.333% - 20px);
-}
+}  */
 
 /* media 400px width */
