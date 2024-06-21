@@ -1,4 +1,4 @@
-/* general body desgin */
+/* general body design */
 body {
     background-color: #e4e6d9;
     text-align: center;
@@ -19,7 +19,7 @@ h3 {
     font-size: 20px;
 }
 
-h2 h4{
+h2 h4 {
     font-size: 15px;
 }
 
@@ -33,14 +33,14 @@ img {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
 }
 
-/* general navigation bar desgin */
+/* general navigation bar design */
 nav {
     /* make the navigation bar scroll with the content */
     position: sticky;
@@ -73,26 +73,30 @@ nav a:focus {
     color: #6c8776;
 }
 
-/* make then the same font color */
+/* make them the same font color */
 .page_top {
     color: white;
     height: 300px; 
 }
 
-/* general sechedule outline */
+/* general schedule outline */
 .more_information {
     display: flex;
-    height: 400px;
-    text-align: center;
+    flex-wrap: wrap;
+    height: auto;
+    text-align: left;
     clear: both;
     justify-content: space-around;
+    gap: 20px;
 }
 
-.more_information div{
-    flex: 500px; 
+.more_information div {
+    flex: 1 1 calc(50% - 20px);
 }
 
 aside {
     background-color: #c0cfb2;
-    color: white; 
+    color: white;
+    width: 300px;
+    margin-left: 20px;
 }
