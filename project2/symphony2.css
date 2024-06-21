@@ -43,9 +43,9 @@ img {
 
     /* make them the same font color */
 .page_top {
+    background-image: url(mountians.jpg);
     color: white;
     height: 200px;
-    background-image: url(mountians.jpg);
 }
     
 .schedule {
