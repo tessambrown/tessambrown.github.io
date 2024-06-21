@@ -102,3 +102,42 @@ nav a:focus
 }
         
 /* media 400px width */
+/* Media Query for screen sizes of 400px or less */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: .5em;
+    }
+
+    .more_information {
+        flex-direction: column;
+    }
+
+    .more_information div {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
