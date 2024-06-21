@@ -6,12 +6,13 @@ body {
 
 footer {
     background-color: #6c8776;
-    height: 50px;
+    height: 30px;
 }
 
 h1 {
     font-family: Impact, sans-serif;
     font-size: 40px;
+    filter: drop-shadow(0px 4px 6px black);
 }
 
 h2 {
@@ -22,7 +23,6 @@ h2 {
 h3 {
     font-family: Impact, sans-serif;
     font-size: 20px;
-    color: #6c8776;
 }
 
 h4 {
