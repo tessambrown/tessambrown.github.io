@@ -35,12 +35,6 @@ p {
     font-size: 12px;
 }
 
-img {
-    display: block;
-    border-radius: 3px;
-    filter: drop-shadow(0px 4px 6px black);
-}
-
 .schedule {
     background-color: #c0cfb2;
     color: white;
@@ -98,7 +92,18 @@ nav a:focus {
 }
 
 .more_information div {
-    flex: 1 1 calc(33.333% - 20px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* media 400px width */
+@media (max-width: 400px)
+{
+    
+}
