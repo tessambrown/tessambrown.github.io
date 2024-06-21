@@ -35,8 +35,6 @@ img {
 .schedule {
     background-color: #c0cfb2;
     color: white;
-    width: 300px;
-    margin-left: 20px;
 }
 
 /* .grid {
@@ -82,7 +80,7 @@ nav a:focus {
 
 /* make them the same font color */
 .page_top {
-    color: white;
+    color: #6c8776;
     height: 300px; 
 }
 
