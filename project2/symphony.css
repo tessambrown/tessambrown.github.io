@@ -3,8 +3,10 @@ body {
     background-color: #e4e6d9;
     text-align: center;
 }
+
 footer {
     background-color: #6c8776;
+    height: 50px;
 }
 
 h1 {
