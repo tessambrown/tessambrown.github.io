@@ -132,11 +132,11 @@ nav a:focus
         padding: .5em;
     }
 
-    .more_information {
+    .more_information, .page_top {
         flex-direction: column;
     }
 
-    .more_information div {
+    .more_information div, .page_top div {
         flex: 1 1 100%;
         margin-top: 20px;
         margin-bottom: 20px;
