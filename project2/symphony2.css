@@ -1,7 +1,15 @@
+/* image of mountians behind title */
 .page_top {
     background-image: url(mountians.jpg);
     color: white;
     height: 200px;
+}
+
+/* 2 blurbs below the title */
+.about_us {
+    height: 200px;
+    background-color: #c0cfb2;
+    color: white;
 }  
   
   /* general body design */
@@ -45,12 +53,6 @@ img {
     display: block;
     border-radius: 3px;
     filter: drop-shadow(0px 4px 6px black);
-}
-
-.about_us {
-    height: 200px;
-    background-color: #c0cfb2;
-    color: white;
 }
     
 .schedule {
