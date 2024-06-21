@@ -143,7 +143,7 @@ nav a:focus
 
     .more_information {
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .more_information div {
