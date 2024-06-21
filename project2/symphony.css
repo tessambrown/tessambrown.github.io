@@ -30,12 +30,12 @@ p {
 img {
     max-height: 50%;
     display: block;
+    float: right; 
 }
 
 .schedule {
     background-color: #c0cfb2;
     color: white;
-    float: right;
 }
 
 /* .grid {
