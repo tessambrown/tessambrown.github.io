@@ -75,13 +75,12 @@ nav a:focus {
 
 /* make then the same font color */
 .page_top {
-    color: #6c8776;
+    color: white;
     height: 300px; 
-    background-image: url(requiem.jpeg);
 }
 
 /* general sechedule outline */
-.more_information div {
+.more_information {
     display: flex;
     height: 400px;
     text-align: center;
@@ -89,22 +88,8 @@ nav a:focus {
     justify-content: space-around;
 }
 
-.type_1 img {
-    size: 50%;
-    float: right;
-    border-radius: 10px; 
-    margin-right: 20px;
-    width: 200px;
-    filter: drop-shadow(0px 4px 6px black);
-}
-
-.type_2 img{
-    size: 50%;
-    float: left;
-    border-radius: 10px; 
-    margin-left: 20px;
-    width: 200px;
-    filter: drop-shadow(0px 4px 6px black);
+.more_information div{
+    flex: 200px; 
 }
 
 aside {
