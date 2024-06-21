@@ -82,7 +82,7 @@ nav a:focus {
 /* general sechedule outline */
 .more_information div {
     display: flex;
-    height: 200px;
+    height: 400px;
     text-align: center;
     clear: both;
     justify-content: space-around;
@@ -108,4 +108,5 @@ nav a:focus {
 
 aside {
     background-color: #45624e;
+    color: white; 
 }
