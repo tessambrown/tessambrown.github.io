@@ -12,11 +12,12 @@ footer {
 h1 {
     font-family: Impact, sans-serif;
     font-size: 40px;
+    margin-top: 10px;
 }
 
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 h3 {
