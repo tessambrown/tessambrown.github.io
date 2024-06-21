@@ -3,6 +3,9 @@ body {
     background-color: #e4e6d9;
     text-align: center;
 }
+footer {
+    background-color: #6c8776;
+}
 
 h1 {
     font-family: Impact, sans-serif;
@@ -17,6 +20,7 @@ h2 {
 h3 {
     font-family: Impact, sans-serif;
     font-size: 20px;
+    color: #6c8776;
 }
 
 h4 {
@@ -79,7 +83,7 @@ nav a:focus {
 /* make them the same font color */
 .page_top {
     color: #6c8776;
-    height: 300px; 
+    height: 200px; 
 }
 
 /* general schedule outline */
@@ -96,3 +100,5 @@ nav a:focus {
 .more_information div {
     flex: 1 1 calc(33.333% - 20px);
 }
+
+/* media 400px width */
