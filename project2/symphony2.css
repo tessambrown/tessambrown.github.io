@@ -47,7 +47,11 @@ img {
     filter: drop-shadow(0px 4px 6px black);
 }
 
-    /* make them the same font color */
+.about_us {
+    height: 200px;
+    background-color: #c0cfb2;
+    color: white;
+}
     
 .schedule {
     background-color: #c0cfb2;
