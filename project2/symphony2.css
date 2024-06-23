@@ -1,6 +1,6 @@
 /* image of mountians behind title */
 .page_top {
-    background-image: url(mountians.jpg) no-repeat center;
+    background-image: url(mountians.jpg) no-repeat;
     color: white;
     height: 200px;
 }
@@ -109,11 +109,6 @@ nav a:focus
     color: #6c8776;
 }
     
-    /* make them the same font color */
-.page_top {
-    color: #6c8776;
-    height: 200px;
-}
     
 /* general schedule outline */
 
