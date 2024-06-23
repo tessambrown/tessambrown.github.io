@@ -86,8 +86,8 @@ nav a {
     transition: all 0.5s ease-out;
 }
     
-nav a:hover,
-nav a:focus
+nav li:hover,
+nav li:focus
 {
     background-color: white;
     color: #6c8776;
