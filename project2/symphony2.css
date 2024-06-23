@@ -108,11 +108,13 @@ nav li:focus
     background-color: #6c8776;
 }
 .text {
+    grid-column: 1/3;
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: white;
 }
 .image {
+    grid-column: 4;
     display: flex;
     justify-content: center;
     align-items: center;
