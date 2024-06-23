@@ -101,18 +101,26 @@ nav li:focus
     
 /* general schedule outline */
 .more_information {
+    background-color: #6c8776;
+    color: white;
     display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    text-align: left;
-    clear: both;
-    justify-content: space-around;
     gap: 20px;
+    padding: 20px;
 }
-    
-/* make the text into a 3 by 3 grid */
-.more_information div {
-    flex: 1 1 calc(33.333% - 20px);
+
+.text {
+    flex: 3;
 }
-        
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 /* media 400px width */
