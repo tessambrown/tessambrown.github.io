@@ -1,8 +1,7 @@
 /* image of mountians behind title */
 .page_top {
-    background-image: url(mountians2.jpg);
-    background-repeat: no-repeat;
-    color: white;
+    font-size: 100px;
+    color: #6c8776;
     height: 200px;
 }
 
@@ -101,6 +100,10 @@ nav a:focus
 {
     background-color: white;
     color: #6c8776;
+}
+
+.more_information h2 {
+    font-size: 50px;
 }
     
     
