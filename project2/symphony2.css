@@ -1,8 +1,7 @@
 /* image of mountians behind title */
 .page_top {
-    background-image: url(mountians.jpg);
+    background-image: url(mountians2.jpg);
     background-repeat: no-repeat;
-    background-size: 1000px;
     color: white;
     height: 200px;
 }
@@ -43,12 +42,12 @@ h3 {
     
 h4 {
     font-family: Impact, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
 }
     
 p {
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
     
    
