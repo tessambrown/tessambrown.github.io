@@ -101,19 +101,18 @@ nav li:focus
     
 /* general schedule outline */
 .more_information {
-    background-color: #6c8776;
-    color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
     padding: 20px;
+    background-color: #6c8776;
 }
-
 .text {
-    flex: 3;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
 }
-
 .image {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
