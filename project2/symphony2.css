@@ -1,8 +1,7 @@
 /* image of mountians behind title */
 .page_top {
-    font-size: 100px;
     color: #6c8776;
-    height: 200px;
+    height: 100px;
 }
 
 /* 2 blurbs below the title */
@@ -25,8 +24,8 @@ footer {
     
 h1 {
     font-family: Impact, sans-serif;
-    font-size: 50px;
-    margin-top: 10px;
+    font-size: 55px;
+    margin-top: 20px;
 }
     
 h2 {
