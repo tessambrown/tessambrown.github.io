@@ -1,6 +1,8 @@
 /* image of mountians behind title */
 .page_top {
     background-image: url(mountians.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 10em;
     color: white;
     height: 200px;
 }
