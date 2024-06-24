@@ -116,6 +116,9 @@ p {
 .more_information h2 {
     font-size: 50px;
     padding: 10px;
+}
+
+.more_information h4 {
     color: #6c8776;
 }
 
