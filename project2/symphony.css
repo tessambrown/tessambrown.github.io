@@ -137,6 +137,10 @@ nav a:focus
         margin-bottom: 20px;
     }
 
+    .about_us h2 {
+        font-size: 18px;
+    }
+
     .page_top div {
         flex: 1 1 100%;
         margin-bottom: 20px;
