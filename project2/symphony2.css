@@ -30,7 +30,6 @@ h1 {
     
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-    font-size: 20px;
 }
     
 h3 {
@@ -60,6 +59,7 @@ p {
 
 .schedule h2 {
     color: white;
+    font-size: 40px;
 }
 
 .image {
