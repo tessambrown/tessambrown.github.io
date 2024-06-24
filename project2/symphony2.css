@@ -78,8 +78,7 @@ p {
 .image img {
     max-width: 100%;
     border-radius: 4px;
-    filter: drop-shadow(3px 3px 1px black);
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
