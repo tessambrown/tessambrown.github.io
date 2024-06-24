@@ -29,6 +29,7 @@ h1 {
     font-family: Impact, sans-serif;
     font-size: 55px;
     margin-top: 20px;
+    color: #6c8776;
 }
     
 h2 {
@@ -48,6 +49,7 @@ h4 {
 p {
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
     font-size: 17px;
+    padding: 10px;
 }
     
    
