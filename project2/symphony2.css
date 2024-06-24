@@ -1,11 +1,13 @@
 /* image of mountians behind title */
 .page_top {
     color: #6c8776;
+    padding: 15px;
 }
 
 /* 2 blurbs below the title */
 .about_us {
     color:#6c8776;
+    padding: 10px;
 }
 
 .about_us h2 {
