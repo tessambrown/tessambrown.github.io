@@ -7,6 +7,7 @@
 /* 2 blurbs below the title */
 .about_us {
     height: 200px;
+    color:#6c8776;
 }  
   
   /* general body design */
@@ -95,6 +96,7 @@ p {
     /* make the navigation bar items fill the available space */
     flex: 1;
     color: #fff;
+    font-family: Impact, sans-serif;
     text-decoration: none;
     padding: .5em 1em;
     transition: all 0.5s ease-out;
