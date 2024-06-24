@@ -7,7 +7,6 @@
 /* 2 blurbs below the title */
 .about_us {
     height: 200px;
-    color: white;
 }  
   
   /* general body design */
@@ -18,7 +17,7 @@ body {
     
 footer {
     background-color: #6c8776;
-    height: 30px;
+    height: 50px;
 }
     
 h1 {
