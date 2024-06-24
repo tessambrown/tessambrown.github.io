@@ -110,6 +110,10 @@ p {
 .more_information h2 {
     font-size: 50px;
 }
+
+footer p{
+    color: white;
+}
     
     
 /* general schedule outline */
