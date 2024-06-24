@@ -6,7 +6,11 @@
 /* 2 blurbs below the title */
 .about_us {
     color:#6c8776;
-}  
+}
+
+.about_us h2 {
+    font-size: 25px;
+}
   
   /* general body design */
 body {
@@ -157,7 +161,7 @@ footer p{
     }
 
     .nav {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .nav a {
