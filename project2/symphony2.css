@@ -125,7 +125,50 @@ footer p{
 
 
 /* media 400px width */
-/* @media (max-width: 400px)
-{
+@media (max-width: 400px) {
+    h1 {
+        font-size: 35px;
+        margin-top: 10px;
+    }
 
-} */
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .schedule {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .schedule h2 {
+        font-size: 30px;
+    }
+
+    .schedule h4 {
+        font-size: 20px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav a {
+        padding: .5em;
+    }
+
+    .more_information h2 {
+        font-size: 30px;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+}
