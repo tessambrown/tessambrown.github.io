@@ -103,7 +103,7 @@ p {
   
   /* Change the color of links on hover */
 .nav a:hover, .nav a:focus {
-    background-color: #c0cfb2;
+    background-color: white;
     color: #6c8776;
 }
 
