@@ -61,7 +61,7 @@
     <div>
       <button class="randomize">Generate random story</button>
     </div>
-    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    
     <p class="story"></p>
 
     <script>
@@ -100,8 +100,10 @@
         }
 
         if(document.getElementById("uk").checked) {
-          const weight = '${Math.round(150 * 0.0714286)}stone';
-          const temperature = '${Math.round((75 - 32) * 5 / 9)} centigrade';
+          // const weight = '${Math.round(150 * 0.0714286)} stone';
+          // const temperature = '${Math.round((75 - 32) * 5 / 9)} centigrade';
+          const weight = Math.round(150 * 0.0714286) + " stone";
+          const temperature = Math.round((75 - 32) * 5 / 9) + " centigrade";
 
           newStory = newStory.replaceAll("75 degrees fahrenheit", temperature);
           newStory = newStory.replaceAll("150 pounds", weight);
