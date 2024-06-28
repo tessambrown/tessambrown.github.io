@@ -26,11 +26,21 @@
       }
 
       p {
-        background: #ffc125;
+        background: lightblue;
         color: #5e2612;
         padding: 10px;
         visibility: hidden;
       }
+
+      .button {
+        background-color: lightcoral;
+        color: white;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 8px;
+      }
+
+
     </style>
   </head>
 
@@ -50,5 +60,61 @@
     </div>
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
     <p class="story"></p>
+
+    <script>
+      const customName = document.getElementById('customname');
+      const randomize = document.querySelector('.randomize');
+      const story = document.querySelector('.story');
+
+      function randomValueFromArray(array){
+        const random = Math.floor(Math.random()*array.length);
+        return array[random];
+      }
+
+      const storyText = "It was 75 degrees fahrenheit outside and sunny, so :insertx: when on a hike at chautauqua. When they got to the :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 150 pounds, it was a hot day, and hiking can be treacherous.";
+      const insertX = ["Jonny the Rock Climber", "Chad the Frat Boy", "Maggie the Tourist"];
+      const insertY = ["Royal Arch Trail", "First and second Flatiron trail", "Bluebell Trail Loop "];
+      const insertZ = ["got attacked by a mountain lion", "fell down and broke thier arm", "got trampled by trail runners"];
+
+      randomize.addEventListener('click', result);
+
+      function result() {
+
+        // declared the variable inside because when it is clicked it changes
+        const newStory = storyText; 
+        const xItem = randomValueFromArray();
+        const yItem = randomValueFromArray();
+        const zItem = randomValueFromArray();
+        
+        // replace the x, y, and z item with the randomly generated array
+        storyText = storyText.replace(":insertx:", xItem);
+        storyText = storyText.replace(":inserty:", yItem);
+        storyText = storyText.replace(":insertz:", zItem); 
+
+        // replace Bob with the custom name that was entered by the user
+        if(customName.value !== '') {
+          const name = customName.value;
+          storyText = storyText.replace("Bob", name);
+        }
+
+        // coverted US sytem to metric -> changed number to string -> added unit
+        if(document.getElementById("uk").checked) {
+          const weight = Math.round(150);
+          weight = `(Number(weight) / 14 ${stones}`; 
+
+
+          const temperature =  Math.round(75);
+          temperature = `(Number(temperature) - 32) / (9/5) ${centigrade}`;
+
+          storyText = storyText.replace("75 degrees fahrenheit", temperature);
+          storyText = storyText.replace("150 pounds", weight);
+        }
+
+        story.textContent = storyText;
+        story.style.visibility = 'visible';
+      }
+
+    </script>
+
   </body>
 </html>

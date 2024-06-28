@@ -11,19 +11,20 @@ function randomValueFromArray(array){
 
 2. RAW TEXT STRINGS
 
-It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.
+It was 75 degrees fahrenheit outside and sunny, so :insertx: when on a hike at chautauqua. When they got to the :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 150 pounds, it was a hot day, and hiking can be treacherous.
 
-Willy the Goblin
-Big Daddy
-Father Christmas
+Jonny the Rock Climber
+Chad the Frat Boy 
+Maggie the Tourist
 
-the soup kitchen
-Disneyland
-the White House
+Royal Arch Trail
+First and second Flatiron trail 
+Bluebell Trail Loop 
 
-spontaneously combusted
-melted into a puddle on the sidewalk
-turned into a slug and crawled away
+got attacked by a mountain lion
+fell down and broke thier arm
+got trampled by trail runners
+
 
 3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
