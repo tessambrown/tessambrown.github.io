@@ -53,10 +53,10 @@
       <input id="customname" type="text" placeholder="" />
     </div>
     <div>
-      <label for="us">US</label
-      ><input id="us" type="radio" name="ukus" value="us" checked />
-      <label for="uk">UK</label
-      ><input id="uk" type="radio" name="ukus" value="uk" />
+      <label for="us">US</label>
+      <input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label>
+      <input id="uk" type="radio" name="ukus" value="uk" />
     </div>
     <div>
       <button class="randomize">Generate random story</button>
@@ -69,51 +69,43 @@
       const randomize = document.querySelector('.randomize');
       const story = document.querySelector('.story');
 
-      function randomValueFromArray(array){
-        const random = Math.floor(Math.random()*array.length);
+      function randomValueFromArray(array) {
+        const random = Math.floor(Math.random() * array.length);
         return array[random];
       }
 
-      const storyText = "It was 75 degrees fahrenheit outside and sunny, so :insertx: when on a hike at chautauqua. When they got to the :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 150 pounds, it was a hot day, and hiking can be treacherous.";
+      const storyText = "It was 75 degrees fahrenheit outside and sunny, so :insertx: went on a hike at Chautauqua. When they got to the :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 150 pounds, it was a hot day, and hiking can be treacherous.";
       const insertX = ["Jonny the Rock Climber", "Chad the Frat Boy", "Maggie the Tourist"];
-      const insertY = ["Royal Arch Trail", "First and second Flatiron trail", "Bluebell Trail Loop "];
-      const insertZ = ["got attacked by a mountain lion", "fell down and broke thier arm", "got trampled by trail runners"];
+      const insertY = ["Royal Arch Trail", "First and Second Flatiron Trail", "Bluebell Trail Loop"];
+      const insertZ = ["got attacked by a mountain lion", "fell down and broke their arm", "got trampled by trail runners"];
 
       randomize.addEventListener('click', result);
 
       function result() {
+        let newStory = storyText;
+        const xItem = randomValueFromArray(insertX);
+        const yItem = randomValueFromArray(insertY);
+        const zItem = randomValueFromArray(insertZ);
 
-        // declared the variable inside because when it is clicked it changes
-        const newStory = storyText; 
-        const xItem = randomValueFromArray();
-        const yItem = randomValueFromArray();
-        const zItem = randomValueFromArray();
-        
-        // replace the x, y, and z item with the randomly generated array
-        storyText = storyText.replace(":insertx:", xItem);
-        storyText = storyText.replace(":inserty:", yItem);
-        storyText = storyText.replace(":insertz:", zItem); 
+        newStory = newStory.replace(":insertx:", xItem);
+        newStory = newStory.replace(":insertx:", xItem);
+        newStory = newStory.replace(":inserty:", yItem);
+        newStory = newStory.replace(":insertz:", zItem);
 
-        // replace Bob with the custom name that was entered by the user
         if(customName.value !== '') {
           const name = customName.value;
-          storyText = storyText.replace("Bob", name);
+          newStory = newStory.replace("Bob", name);
         }
 
-        // coverted US sytem to metric -> changed number to string -> added unit
         if(document.getElementById("uk").checked) {
-          const weight = Math.round(150);
-          weight = `(Number(weight) / 14 ${stones}`; 
+          const weight = Math.round(150 * 0.0714286) + " stone";
+          const temperature = Math.round((75 - 32) * 5 / 9) + " centigrade";
 
-
-          const temperature =  Math.round(75);
-          temperature = `(Number(temperature) - 32) / (9/5) ${centigrade}`;
-
-          storyText = storyText.replace("75 degrees fahrenheit", temperature);
-          storyText = storyText.replace("150 pounds", weight);
+          newStory = newStory.replace("75 degrees fahrenheit", temperature);
+          newStory = newStory.replace("150 pounds", weight);
         }
 
-        story.textContent = storyText;
+        story.textContent = newStory;
         story.style.visibility = 'visible';
       }
 
