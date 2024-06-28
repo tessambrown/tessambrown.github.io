@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/ica10.css" rel="stylesheet">
+    <title>ICA 10</title>
+</head>
+<body>
+    <h1>ICA 10: Interactive Elements </h1>
+
+    <!-- function #1 -->
+    <p>Click this button to make the font change color:</p>
+    <button id="button1">Click me!!</button>
+    
+
+    <!-- function #2 -->
+    <p class="text">Click this button to make the button change color:</p>
+    <button id="button2">Click me!!</button>
+    
+
+    <script>
+        document.addEventListener ("DOMContentLoaded", function() 
+        {
+            const button1 = document.getElementById("button1");
+            button1.addEventListener("click", function() 
+            {
+                if (button.classList.contains("white")) 
+                {
+                    button.classList.remove("white");
+                    button.classList.add("blue");
+                } 
+                else 
+                {
+                    button.classList.remove("blue");
+                    button.classList.add("white");
+                }
+            });
+
+            const button2 = document.getElementById("button2");
+            const text2 = document.getElementById("text2");
+            button2.addEventListener("click", function() 
+            {
+                if (text2.classList.contains("black-font")) 
+                {
+                    text2.classList.remove("black-font");
+                    text2.classList.add("red-font");
+                } 
+                else 
+                {
+                    text2.classList.remove("red-font");
+                    text2.classList.add("black-font");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
