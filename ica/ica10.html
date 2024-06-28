@@ -15,10 +15,8 @@
     
 
     <!-- function #2 -->
-    <div>
-        <p id="text2">Click this button to make the font change color:</p>
-        <button id="button2">Click me!!</button>
-    </div>
+    <p id="text2">Click this button to make the font change color:</p>
+    <button id="button2">Click me!!</button>
     
 
     <script>
@@ -43,15 +41,14 @@
             const text2 = document.getElementById("text2");
             button2.addEventListener("click", function() 
             {
-                if (text2.classList.contains("black-font")) 
-                {
-                    text2.classList.remove("black-font");
-                    text2.classList.add("red-font");
-                } 
-                else(text2.classList.contains("red-font"))
+                if (text2.classList.contains("red-font")) 
                 {
                     text2.classList.remove("red-font");
                     text2.classList.add("black-font");
+                } 
+                else
+                {
+                    text2.classList.add("red-font");
                 }
             });
         });
