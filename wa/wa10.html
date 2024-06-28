@@ -65,7 +65,51 @@
     <p class="story"></p>
 
     <script>
-      document.querySelector("html").style.backgroundColor = "red";
+      const customName = document.getElementById('customname');
+      const randomize = document.querySelector('.randomize');
+      const story = document.querySelector('.story');
+
+      function randomValueFromArray(array) 
+      {
+        const random = Math.floor(Math.random() * array.length);
+        return array[random];
+      }
+
+      const storyText = "It was 75 degrees fahrenheit outside and sunny, so :insertx: went on a hike at Chautauqua. When they got to the :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 150 pounds, it was a hot day, and hiking can be treacherous.";
+      const insertX = ["Jonny the Rock Climber", "Chad the Frat Boy", "Maggie the Tourist"];
+      const insertY = ["Royal Arch Trail", "First and Second Flatiron Trail", "Bluebell Trail Loop"];
+      const insertZ = ["got attacked by a mountain lion", "fell down and broke their arm", "got trampled by trail runners"];
+
+      randomize.addEventListener('click', result);
+
+      function result() {
+        let newStory = storyText;
+
+        const xItem = randomValueFromArray(insertX);
+        const yItem = randomValueFromArray(insertY);
+        const zItem = randomValueFromArray(insertZ);
+
+        newStory = newStory.replaceAll(':insertx:', xItem);
+        newStory = newStory.replaceAll(':insertx:', xItem);
+        newStory = newStory.replaceAll(':inserty:', yItem);
+        newStory = newStory.replaceAll(':insertz:', zItem);
+
+        if(customName.value !== '') {
+          const name = customName.value;
+          newStory = newStory.replaceAll('Bob', name);
+        }
+
+        if(document.getElementById("uk").checked) {
+          const weight = '${Math.round(150 * 0.0714286)}stone';
+          const temperature = '${Math.round((75 - 32) * 5 / 9)} centigrade';
+
+          newStory = newStory.replaceAll("75 degrees fahrenheit", temperature);
+          newStory = newStory.replaceAll("150 pounds", weight);
+        }
+
+        story.textContent = newStory;
+        story.style.visibility = 'visible';
+      }
     </script>
 
   </body>
