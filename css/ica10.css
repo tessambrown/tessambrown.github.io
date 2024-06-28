@@ -13,3 +13,13 @@
 .red-font {
     color: red;
 }
+
+.black {
+    background-color: black;
+    color: white; /* Ensure text is visible on black background */
+}
+
+.red {
+    background-color: red;
+    color: white; /* Change font color for better contrast */
+}
