@@ -15,7 +15,7 @@
     
 
     <!-- function #2 -->
-    <p class="text">Click this button to make the button change color:</p>
+    <p id="text">Click this button to make the button change color:</p>
     <button id="button2">Click me!!</button>
     
 
@@ -25,15 +25,15 @@
             const button1 = document.getElementById("button1");
             button1.addEventListener("click", function() 
             {
-                if (button.classList.contains("white")) 
+                if (button1.classList.contains("white")) 
                 {
-                    button.classList.remove("white");
-                    button.classList.add("blue");
+                    button1.classList.remove("white");
+                    button1.classList.add("blue");
                 } 
                 else 
                 {
-                    button.classList.remove("blue");
-                    button.classList.add("white");
+                    button1.classList.remove("blue");
+                    button1.classList.add("white");
                 }
             });
 
