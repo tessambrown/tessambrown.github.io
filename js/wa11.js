@@ -32,15 +32,6 @@ for (let i = 0; i < filenames.length; i++) {
     newImage.style.cursor = 'pointer';
     newImage.style.transition = 'transform 0.2s';
 
-    //images were not working so this scales them from inside javascript
-    // newImage.addEventListener('mouseenter', () => {
-    //     newImage.style.transform = 'scale(1.1)';
-    // });
-
-    // newImage.addEventListener('mouseleave', () => {
-    //     newImage.style.transform = 'scale(1)';
-    // });
-
     thumbBar.appendChild(newImage);
 
     newImage.addEventListener('click', () => {
