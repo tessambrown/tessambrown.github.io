@@ -10,11 +10,36 @@ const filenames = ['wa11_pic1.jpeg', 'wa11_pic2.jpeg', 'wa11_pic3.jpeg', 'wa11_p
 /* Declaring the alternative text for each image file */
 const altText = ['image 1', 'image 2', 'image 3', 'image 4', 'image 5'];
 
+/* Applying styles via JavaScript */
+displayedImage.style.width = '100%';
+displayedImage.style.height = 'auto';
+displayedImage.style.maxHeight = '400px'; /* Adjust as needed */
+
+thumbBar.style.display = 'flex';
+thumbBar.style.flexWrap = 'wrap';
+thumbBar.style.gap = '10px';
+thumbBar.style.justifyContent = 'center';
+
 /* Looping through images */
 for (let i = 0; i < filenames.length; i++) {
     const newImage = document.createElement('img');
     newImage.setAttribute('src', `/img/${filenames[i]}`);
     newImage.setAttribute('alt', altText[i]);
+
+    /* Applying styles to thumbnail images */
+    newImage.style.width = '100px'; /* Adjust as needed */
+    newImage.style.height = 'auto';
+    newImage.style.cursor = 'pointer';
+    newImage.style.transition = 'transform 0.2s';
+
+    newImage.addEventListener('mouseenter', () => {
+        newImage.style.transform = 'scale(1.1)';
+    });
+
+    newImage.addEventListener('mouseleave', () => {
+        newImage.style.transform = 'scale(1)';
+    });
+
     thumbBar.appendChild(newImage);
 
     newImage.addEventListener('click', () => {
