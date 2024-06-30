@@ -27,10 +27,10 @@ for (let i = 0; i < filenames.length; i++) {
     newImage.setAttribute('alt', altText[i]);
 
     /* Applying styles to thumbnail images */
-    // newImage.style.width = '100px'; /* Adjust as needed */
-    // newImage.style.height = 'auto';
-    // newImage.style.cursor = 'pointer';
-    // newImage.style.transition = 'transform 0.2s';
+    newImage.style.width = '100px'; /* Adjust as needed */
+    newImage.style.height = 'auto';
+    newImage.style.cursor = 'pointer';
+    newImage.style.transition = 'transform 0.2s';
 
     //images were not working so this scales them from inside javascript
     // newImage.addEventListener('mouseenter', () => {
