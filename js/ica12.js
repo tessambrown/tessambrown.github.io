@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             const response = await fetch(endpoint);
             if (!response.ok) 
             {
-                throw new Error(response.statusText);
+                throw Error(response.statusText);
             }
 
             const json = await response.json();
