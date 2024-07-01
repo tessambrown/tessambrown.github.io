@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () =>{
     const newAnswer = document.querySelector('#js-tweet');
     newAnswer.addEventListener('click', getAnswer)
 
+    let currentTrivia = null; 
+
     async function getTrivia() 
     {
         try 
@@ -18,7 +20,16 @@ document.addEventListener('DOMContentLoaded', () =>{
             }
 
             const json = await response.json();
+            currentTrivia = json;
             displayTrivia(json['question']);
+
+            if (currentTrivia) 
+            {
+                displayAnswer(currentTrivia['answer']);
+            } else 
+            {
+                alert('Please fetch a question first!');
+            }
 
         } 
         catch (err)
@@ -28,36 +39,15 @@ document.addEventListener('DOMContentLoaded', () =>{
         }
     }
 
-    async function getAnswer()
-    {
-        try
-        {
-            const answer = await fetch(endpoint);
-            if(!answer.ok)
-            {
-                throw Error(answer.statusText);
-            }
-
-            const json = await answer.json();
-            displayAnswer(json['answer']);
-        }
-        catch(err)
-        {
-            console.log('Fetch error:', err);
-            alert('Failed to fetch answer');
-        }
-    }
-
     function displayTrivia(quote) 
     {
         const triviaText = document.querySelector('#js-quote-text');
         triviaText.textContent = quote; 
     }
 
-    function displayAnswer(tweet)
-    {
+    function displayAnswer(answer) {
         const triviaAnswer = document.querySelector('#js-answer-text');
-        triviaAnswer.textContent = tweet;
+        triviaAnswer.textContent = answer;
     }
 
     getTrivia();
