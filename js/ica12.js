@@ -14,11 +14,20 @@ function getTriva()
             throw Error(response.statusText);
         }
         const json = await response.json();
-        console.log(json);
+        // console.log(json);
+        displayTriva[json('question')];
     }
     catch(err)
     {
         console.log(err);
-        alert['Failed to fetch new quote'];
+        alert['Failed to fetch new quote']; ``
     }
 }
+
+function displayTriva(quote) 
+{
+    const triviaText = document.querySelector('js-quote-text')
+    triviaText.textContent = quote; 
+}
+
+getTriva();
