@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             }
 
             const json = await response.json();
-            console.log('JSONs Response:', json)
-            // displayTrivia(json.question);
+            displayTrivia(json['question']);
 
             // displayAnswer(json.answer);
 
@@ -29,11 +28,11 @@ document.addEventListener('DOMContentLoaded', () =>{
         }
     }
 
-    // function displayTrivia(quote) 
-    // {
-    //     const triviaText = document.querySelector('ajs-quote-text');
-    //     triviaText.textContent = quote; 
-    // }
+    function displayTrivia(quote) 
+    {
+        const triviaText = document.querySelector('#js-quote-text');
+        triviaText.textContent = quote; 
+    }
 
     // getTrivia();
 });
