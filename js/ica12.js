@@ -1,36 +1,38 @@
-const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
+document.addEventListener('DOMContentLoaded', () =>{
+    const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
-const newQuote = document.querySelector('ajs-new-quote');
-// const newAnswer = document.querySelector('js-tweet')
-newQuote.addEventListener('click', getTrivia); 
+    const newQuote = document.querySelector('ajs-new-quote');
+    // const newAnswer = document.querySelector('js-tweet')
+    newQuote.addEventListener('click', getTrivia); 
 
-async function getTrivia() 
-{
-    try 
+    async function getTrivia() 
     {
-        const response = await fetch(endpoint);
-        if (!response.ok) 
+        try 
         {
-            throw Error(response.statusText);
+            const response = await fetch(endpoint);
+            if (!response.ok) 
+            {
+                throw Error(response.statusText);
+            }
+
+            const json = await response.json();
+            displayTrivia(json.question);
+
+            // displayAnswer(json.answer);
+
+        } 
+        catch (err)
+        {
+            console.log(err);
+            alert('Failed to fetch new quote');
         }
-
-        const json = await response.json();
-        displayTrivia(json.question);
-
-        // displayAnswer(json.answer);
-
-    } 
-    catch (err)
-    {
-        console.log(err);
-        alert('Failed to fetch new quote');
     }
-}
 
-function displayTrivia(quote) 
-{
-    const triviaText = document.querySelector('ajs-quote-text');
-    triviaText.textContent = quote; 
-}
+    function displayTrivia(quote) 
+    {
+        const triviaText = document.querySelector('ajs-quote-text');
+        triviaText.textContent = quote; 
+    }
 
-getTrivia();
+    getTrivia();
+});
