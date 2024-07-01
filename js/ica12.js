@@ -2,8 +2,10 @@ document.addEventListener('DOMContentLoaded', () =>{
     const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
 
     const newQuote = document.querySelector('#js-new-quote'); 
-    // const newAnswer = document.querySelector('js-tweet')
     newQuote.addEventListener('click', getTrivia); 
+
+    const newAnswer = document.querySelector('#js-tweet');
+    newAnswer.addEventListener('click', getAnswer)
 
     async function getTrivia() 
     {
@@ -18,13 +20,31 @@ document.addEventListener('DOMContentLoaded', () =>{
             const json = await response.json();
             displayTrivia(json['question']);
 
-            // displayAnswer(json.answer);
-
         } 
         catch (err)
         {
             console.log('Fetch error:', err);
             alert('Failed to fetch new quote');
+        }
+    }
+
+    async function getAnswer()
+    {
+        try
+        {
+            const answer = await fetch(endpoint);
+            if(!answer.ok)
+            {
+                throw Error(answer.statusText);
+            }
+
+            const json = await answer.json();
+            displayAnswer(json['answer']);
+        }
+        catch(err)
+        {
+            console.log('Fetch error:', err);
+            alert('Failed to fetch answer');
         }
     }
 
@@ -34,5 +54,11 @@ document.addEventListener('DOMContentLoaded', () =>{
         triviaText.textContent = quote; 
     }
 
-    // getTrivia();
+    function displayAnswer(tweet)
+    {
+        const triviaAnswer = document.querySelector('#js-answer-text');
+        triviaAnswer.textContent = tweet;
+    }
+
+    getTrivia();
 });
