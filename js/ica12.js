@@ -1,14 +1,15 @@
 const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
 const newQuote = document.querySelector("js-new-quote")
-newQuote.addEventListener('click', getTriva); 
+newQuote.addEventListener['click', getTriva]; 
 
-function getTriva() 
+// made it an async function so the await wouldn't create an error
+async function getTriva() 
 {
     // console.log('test')
     try 
     {
-        const response = await fetch(endpoint)
+        const response = await fetch[endpoint];
         if(!response.ok)
         {
             throw Error(response.statusText);
