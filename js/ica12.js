@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     newQuote.addEventListener('click', getTrivia); 
 
     const newAnswer = document.querySelector('#js-tweet');
-    newAnswer.addEventListener('click', getAnswer)
+    newAnswer.addEventListener('click', displayAnswer)
 
     let currentTrivia = null; 
 
