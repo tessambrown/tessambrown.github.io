@@ -22,14 +22,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             const json = await response.json();
             currentTrivia = json;
             displayTrivia(json['question']);
-
-            if (currentTrivia) 
-            {
-                displayAnswer(currentTrivia['answer']);
-            } else 
-            {
-                alert('Please fetch a question first!');
-            }
+            displayAnswer(currentTrivia['answer']);
 
         } 
         catch (err)
