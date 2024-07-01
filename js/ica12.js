@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () =>{
     const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
-    const newQuote = document.querySelector('js-new-quote'); //removed -> # 
+    const newQuote = document.querySelector('#js-new-quote'); 
     // const newAnswer = document.querySelector('js-tweet')
     newQuote.addEventListener('click', getTrivia); 
 
