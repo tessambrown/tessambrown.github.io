@@ -7,26 +7,26 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     async function getTrivia() 
     {
-        alert('TEST!!!')
-        // try 
-        // {
-        //     // const response = await fetch(endpoint);
-        //     // if (!response.ok) 
-        //     // {
-        //     //     throw Error(response.statusText);
-        //     // }
+        try 
+        {
+            const response = await fetch(endpoint);
+            if (!response.ok) 
+            {
+                throw Error(response.statusText);
+            }
 
-        //     // const json = await response.json();
-        //     // displayTrivia(json.question);
+            const json = await response.json();
+            console.log(json)
+            // displayTrivia(json.question);
 
-        //     // displayAnswer(json.answer);
+            // displayAnswer(json.answer);
 
-        // } 
-        // catch (err)
-        // {
-        //     console.log(err);
-        //     alert('Failed to fetch new quote');
-        // }
+        } 
+        catch (err)
+        {
+            console.log(err);
+            alert('Failed to fetch new quote');
+        }
     }
 
     // function displayTrivia(quote) 
