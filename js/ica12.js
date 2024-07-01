@@ -1,23 +1,34 @@
 const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
-const newQuote = document.querySelector('.js-new-quote');
+const newQuote = document.querySelector('js-new-quote');
+// const newAnswer = document.querySelector('js-tweet')
 newQuote.addEventListener('click', getTrivia); 
 
-async function getTrivia() {
-    try {
+async function getTrivia() 
+{
+    try 
+    {
         const response = await fetch(endpoint);
-        if (!response.ok) {
+        if (!response.ok) 
+        {
             throw Error(response.statusText);
         }
+
         const json = await response.json();
         displayTrivia(json.question);
-    } catch (err) {
+
+        // displayAnswer(json.answer);
+
+    } 
+    catch (err)
+    {
         console.log(err);
         alert('Failed to fetch new quote');
     }
 }
 
-function displayTrivia(quote) {
+function displayTrivia(quote) 
+{
     const triviaText = document.querySelector('.js-quote-text');
     triviaText.textContent = quote; 
 }
