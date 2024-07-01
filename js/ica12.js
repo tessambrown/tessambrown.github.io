@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () =>{
     const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
-    const newQuote = document.querySelector('#js-new-quote');
+    const newQuote = document.querySelector('js-new-quote'); //removed -> # 
     // const newAnswer = document.querySelector('js-tweet')
     newQuote.addEventListener('click', getTrivia); 
 
@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () =>{
             const response = await fetch(endpoint);
             if (!response.ok) 
             {
-                throw Error(response.statusText);
+                throw new Error(response.statusText);
             }
 
             const json = await response.json();
-            console.log(json)
+            console.log('JSONs Response:', json)
             // displayTrivia(json.question);
 
             // displayAnswer(json.answer);
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () =>{
         } 
         catch (err)
         {
-            console.log(err);
+            console.log('Fetch error:', err);
             alert('Failed to fetch new quote');
         }
     }
