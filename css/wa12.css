@@ -79,6 +79,13 @@ header {
     box-sizing: border-box; /* Ensures padding doesn't affect overall width/height */
 }
 
+.extend {
+    width: 600px;
+    padding: 50px;
+    font-size: 15px;
+    background-image: url('/img/paper.jpeg') no-repeat center center;
+}
+
 body {
     font-family: 'Special Elite', Courier, monospace; /* Typewriter font */
     background-color: #FAF9F6;
