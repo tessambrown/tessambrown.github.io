@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const endpoint = "https://type.fit/api/quotes"
+    const endpoint = "https://type.fit/api/quotes";
 
     const newPoemButton = document.querySelector('#new-poem');
     newPoemButton.addEventListener('click', getPoem);
