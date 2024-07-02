@@ -1,16 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const url = 'https://www.beanpoems.com/api/random'
-
     const newPoemButton = document.querySelector('#new-poem');
     newPoemButton.addEventListener('click', getPoem);
 
     async function getPoem() {
         try
         {
-            const poem = await fetch(url, {
-                method: 'GET'
-            });
+            const poem = await fetch("https://type.fit/api/quotes")
 
             if(!poem.ok)
             {
