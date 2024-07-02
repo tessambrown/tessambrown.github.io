@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const endpoint = 'https://www.beanpoems.com/api/random';
+    const endpoint = 'GET https://www.beanpoems.com/api/random';
 
     const newPoemButton = document.querySelector('#new-poem');
     newPoemButton.addEventListener('click', getPoem);
