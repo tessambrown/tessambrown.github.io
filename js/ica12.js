@@ -10,9 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentTrivia = null; // Variable to store the current trivia
 
     async function getTrivia() {
-        try {
+        try 
+        {
             const response = await fetch(endpoint);
-            if (!response.ok) {
+
+            if (!response.ok) 
+            {
                 throw Error(response.statusText);
             }
 
@@ -21,7 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
             displayTrivia(json['question']);
             clearAnswer(); // Clear the previous answer when a new trivia is fetched
 
-        } catch (err) {
+        } 
+        catch (err) 
+        {
             console.log('Fetch error:', err);
             alert('Failed to fetch new quote');
         }
@@ -40,12 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function displayAnswer(answer) {
+    function displayAnswer(answer) 
+    {
         const triviaAnswer = document.querySelector('#js-answer-text');
         triviaAnswer.textContent = answer;
     }
 
-    function clearAnswer() {
+    function clearAnswer() 
+    {
         const triviaAnswer = document.querySelector('#js-answer-text');
         triviaAnswer.textContent = ''; // Clear the answer text content
     }
