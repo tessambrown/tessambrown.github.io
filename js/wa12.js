@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const endpoint = "https://type.fit/api/quotes";
+    const endpoint = "https://api.quotable.io/quotes/random?limit=1";
 
     const newPoemButton = document.querySelector('#new-poem');
     newPoemButton.addEventListener('click', getPoem);
