@@ -1,6 +1,7 @@
 body {
     font-family: 'Special Elite', Courier, monospace; /* Typewriter font */
     background-color: #FAF9F6;
+    text-align: center;
 }
 
 .app {
@@ -20,7 +21,7 @@ body {
 
 .header {
     width: 100%;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid #ebebeb;
