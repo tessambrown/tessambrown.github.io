@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     newQuote.addEventListener('click', getTrivia); 
 
     const newAnswer = document.querySelector('#js-tweet');
-    newAnswer.addEventListener('click', displayAnswer)
+    newAnswer.addEventListener('click', displayStoredAnswer)
 
     let currentTrivia = null; 
 
@@ -36,6 +36,18 @@ document.addEventListener('DOMContentLoaded', () =>{
     {
         const triviaText = document.querySelector('#js-quote-text');
         triviaText.textContent = quote; 
+    }
+
+    function displayStoredAnswer() 
+    {
+        if (currentTrivia) 
+        {
+            displayAnswer(currentTrivia['answer']);
+        } 
+        else 
+        {
+            alert('Please fetch a question first!');
+        }
     }
 
     function displayAnswer(answer) {
