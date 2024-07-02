@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const endpoint = "https://type.fit/api/quotes"
+
     const newPoemButton = document.querySelector('#new-poem');
     newPoemButton.addEventListener('click', getPoem);
 
     async function getPoem() {
         try
         {
-            const poem = await fetch('https://api.quotable.io/random')
+            const poem = await fetch(endpoint);
 
             if(!poem.ok)
             {
