@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const endpoint = 'GET https://www.beanpoems.com/api/random';
+    const endpoint = 'curl "https://www.poemist.com/api/v1/randompoems"';
 
     const newPoemButton = document.querySelector('#new-poem');
     newPoemButton.addEventListener('click', getPoem);
