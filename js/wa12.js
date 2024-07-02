@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const endpoint = 'curl "https://www.poemist.com/api/v1/randompoems"';
+
+    const url = 'https://www.beanpoems.com/api/random'
 
     const newPoemButton = document.querySelector('#new-poem');
     newPoemButton.addEventListener('click', getPoem);
@@ -7,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     async function getPoem() {
         try
         {
-            const poem = await fetch(endpoint);
+            const poem = await fetch(url, {
+                method: 'GET'
+            });
 
             if(!poem.ok)
             {
