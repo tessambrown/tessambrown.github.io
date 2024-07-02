@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function getPoem() {
         try
         {
-            const poem = await fetch("https://type.fit/api/quotes")
+            const poem = await fetch('https://api.quotable.io/random')
 
             if(!poem.ok)
             {
