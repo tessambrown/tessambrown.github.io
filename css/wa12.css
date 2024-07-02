@@ -46,23 +46,23 @@
 }
 
 .top-right-image {
-    top: 20px;
-    right: 20px;
+    top: 1px;
+    right: 1px;
     background: url('/img/postage.png') no-repeat center center;
     background-size: cover;
 }
 
 .bottom-left-image {
-    bottom: 20px;
-    left: 20px;
+    bottom: 10px;
+    left: 10px;
     background: url('/img/stamp.png') no-repeat center center;
     background-size: cover;
 }
 
 .top-right-image, .bottom-left-image {
     position: absolute;
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
 }
 
 .app {
