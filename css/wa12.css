@@ -14,9 +14,11 @@ body {
     background-size: cover; /* This will ensure the image covers the entire element */
     border-radius: 5px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width/height */
 }
 
-header {
+.header {
     width: 100%;
     font-size: 30px;
     text-align: center;
@@ -52,4 +54,28 @@ header {
     font-family: 'Special Elite', Courier, monospace;
     width: 100%;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    position: absolute;
+    bottom: 20px; /* Position the button at the bottom of the .app div */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+}
+
+.top-right-image, .bottom-left-image {
+    position: absolute;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+}
+
+.top-right-image {
+    top: 20px;
+    right: 20px;
+    background: url('/img/postage.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.bottom-left-image {
+    bottom: 20px;
+    left: 20px;
+    background: url('/img/stamp.jpeg') no-repeat center center;
+    background-size: cover;
 }
