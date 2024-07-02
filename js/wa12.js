@@ -4,14 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const newPoemButton = document.querySelector('#new-poem');
     newPoemButton.addEventListener('click', getPoem);
 
-    newPoemButton.addEventListener('mouseenter', () => {
-        newPoemButton.style.transform = 'scale(1.1)';
-    });
-
-    newPoemButton.addEventListener('mouseleave', () => {
-        newPoemButton.style.transform = 'scale(1)';
-    });
-
     async function getPoem() {
         try
         {

@@ -22,7 +22,7 @@
     padding: 20px 50px;
 }
 
-.button {
+.poem-button {
     display: block;
     color: white;
     border-radius: 4px;
@@ -38,6 +38,10 @@
     bottom: 20px; /* Position the button at the bottom of the .app div */
     left: 50%;
     transform: translateX(-50%); /* Center the button horizontally */
+}
+
+.poem-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .top-right-image, .bottom-left-image {
