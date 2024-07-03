@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const endpoint = "https://api.api-ninjas.com/v1/quotes";
     const apiKey = "xZEqpXQI+lFLDAIRitIA8Q==X6b4Y4852FAd4NCQ";
 
-    const newPoemButton = document.querySelector('#new-poem');
+    const newPoemButton = document.querySelector('#new-quote');
     newPoemButton.addEventListener('click', getPoem);
 
     async function getPoem() {
@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
             displayPoem(json[0].quote); // Assuming json[0] contains the quote object with 'quote' being the quote text
         } catch (err) {
             console.error('Fetch error:', err);
-            alert('Failed to fetch new poem');
+            alert('Failed to fetch new quote');
         }
     }
 
     function displayPoem(quote) {
-        const poemText = document.querySelector('#poem-text');
+        const poemText = document.querySelector('#quote-text');
         poemText.textContent = quote;
     }
 });
