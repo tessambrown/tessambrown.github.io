@@ -48,8 +48,9 @@ function displayCompanyInfo(company)
 function addEmployee(employees, company) 
 {
     console.log('Problem 3:');
-    employees.push(newEmployee);
-    company.employees.push(newEmployee);
+
+    employees.push(JSON.stringify(newEmployee));
+    company.push(JSON.stringify(newEmployee))
 
     console.log('Updated Employee JSON File')
     displayHRInfo(employees);
