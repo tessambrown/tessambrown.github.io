@@ -19,6 +19,7 @@ fetch(requestURL2)
   .then(text => {
     const company = JSON.parse(text);
     displayCompanyInfo(company);
+    addEmployee(newEmployee, employees, company);
     calculateAndDisplayTotalSalary(company.employees);
     applyRaisesAndDisplay(company.employees);
     updateWorkFromHomeStatus(company.employees);
@@ -49,7 +50,10 @@ function addEmployee(newEmployee, employees, company)
     console.log('Problem 3:');
     employees.push(newEmployee);
     company.employees.push(newEmployee);
+
+    console.log('Updated Employee JSON File')
     displayHRInfo(employees);
+    console.log('Updated Company and Employee JSON File')
     displayCompanyInfo(company);
 }
 
@@ -60,7 +64,7 @@ let newEmployee = {
     "designation": "Executive",
     "salary": 25600,
     "raise": false
-  };
+};
 
 // problem 4: -> take in the employees and calculate thier total salary
 function calculateAndDisplayTotalSalary(employees) 
