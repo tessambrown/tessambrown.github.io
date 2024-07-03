@@ -18,6 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // button 9 -> W, X, Y, Z
 
     // if the buttons get pushed fill in the phone number
-    
+
+    // const button1 = document.querySelector('#1')
+    // button1.addEventListener('click', selected1)
+
+    // function selected1(output1) 
+    // {
+    //     const text1 = document.querySelector('#number-text')
+    //     text1.textContent = output1;
+    // }
+
 
 });
