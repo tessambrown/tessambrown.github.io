@@ -43,7 +43,7 @@ header {
     background-color: #D2042D;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
     position: relative;
-    animation: rotate-clockwise 20s linear infinite alternate;
+    animation: rotate-clockwise 25s linear infinite alternate;
 }
 
 .center-dot {
@@ -79,12 +79,12 @@ button {
 
 @keyframes rotate-clockwise {
     0% { transform: rotate(0deg); }
-    50% { transform: rotate(360deg); }
+    50% { transform: rotate(270deg); }
     100% { transform: rotate(0deg); }
 }
 
 @keyframes rotate-counterclockwise {
     0% { transform: rotate(0deg); }
-    50% { transform: rotate(-360deg); }
+    50% { transform: rotate(-270deg); }
     100% { transform: rotate(0deg); }
 }
