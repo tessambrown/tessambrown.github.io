@@ -32,6 +32,7 @@ header {
     background-color: #D2042D;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
     position: relative;
+    animation: rotate-clockwise 10s linear infinite alternate;
 }
 
 .center-dot {
@@ -45,16 +46,16 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.button1 { top: 20%; left: 50%; transform: translate(-50%, -50%); }
-.button2 { top: 30%; left: 70%; transform: translate(-50%, -50%); }
-.button3 { top: 50%; left: 80%; transform: translate(-50%, -50%); }
-.button4 { top: 70%; left: 70%; transform: translate(-50%, -50%); }
-.button5 { top: 80%; left: 50%; transform: translate(-50%, -50%); }
-.button6 { top: 70%; left: 30%; transform: translate(-50%, -50%); }
-.button7 { top: 50%; left: 20%; transform: translate(-50%, -50%); }
-.button8 { top: 30%; left: 30%; transform: translate(-50%, -50%); }
-.button9 { top: 30%; left: 50%; transform: translate(-50%, -50%); }
-.button0 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+#1 { top: 10%; left: 50%; transform: translate(-50%, -50%); }
+#2 { top: 25%; left: 75%; transform: translate(-50%, -50%); }
+#3 { top: 50%; left: 90%; transform: translate(-50%, -50%); }
+#4 { top: 75%; left: 75%; transform: translate(-50%, -50%); }
+#5 { top: 90%; left: 50%; transform: translate(-50%, -50%); }
+#6 { top: 75%; left: 25%; transform: translate(-50%, -50%); }
+#7 { top: 50%; left: 10%; transform: translate(-50%, -50%); }
+#8 { top: 25%; left: 25%; transform: translate(-50%, -50%); }
+#9 { top: 10%; left: 50%; transform: translate(-50%, -50%); }
+#0 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 button {
     width: 50px;
@@ -66,7 +67,10 @@ button {
 }
 
 .input-text {
+    width: 500px;
+    height: 100px;
     margin-top: 20px;
     font-size: 18px;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px inset;
 }
