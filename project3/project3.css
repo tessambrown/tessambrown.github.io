@@ -43,7 +43,7 @@ header {
     background-color: #D2042D;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
     position: relative;
-    animation: rotate-clockwise 25s linear infinite alternate;
+    animation: rotate-clockwise 30s linear infinite alternate;
 }
 
 .center-dot {
@@ -57,7 +57,7 @@ header {
     transform: translate(-50%, -50%);
 }
 
-button {
+.dial button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -66,6 +66,16 @@ button {
     border: none;
     padding: 5px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.clear {
+    width: 100px;
+    height: 25px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .input-text {
