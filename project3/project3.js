@@ -2,6 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // display random letters on each button
     // button 2 -> A, B, C
+    // let random1;
+    // function getRandomLetter2() {
+    //     const letters = ['a', 'b', 'c'];
+    //     random1 = letters[Math.floor(Math.random() * letters.length)];
+    // }
+
+    // function updateButtonWithRandomLetter() {
+    //     const button = document.getElementById(buttonId);
+    //     if (button) {
+    //         button.innerText = getRandomLetter2();
+    //     }
+    // }
     
     // button 3 -> D, E, F
 
