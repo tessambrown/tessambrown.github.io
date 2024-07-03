@@ -18,14 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // button 9 -> W, X, Y, Z
 
     // if the buttons get pushed fill in the phone number
-    if(document.querySelector('#1'))
-    {
-
-    }
-
-    if(document.querySelector('#2'))
-    {
-
-    }
     
+
 });
