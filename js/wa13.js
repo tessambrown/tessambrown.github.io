@@ -43,21 +43,21 @@ function displayCompanyInfo(company) {
   });
 }
 
-// new employee
-let newEmployee = {
-  "name": "Anna",
-  "department": "Tech",
-  "designation": "Executive",
-  "salary": 25600,
-  "raise": false
-};
-
 function addEmployee(newEmployee, employees, company) {
   employees.push(newEmployee);
   company.employees.push(newEmployee);
   displayHRInfo(employees);
   displayCompanyInfo(company);
 }
+
+// new employee
+let newEmployee = {
+    "name": "Anna",
+    "department": "Tech",
+    "designation": "Executive",
+    "salary": 25600,
+    "raise": false
+  };
 
 function calculateAndDisplayTotalSalary(employees) {
   let totalSalary = employees.reduce((total, employee) => total + employee.salary, 0);
