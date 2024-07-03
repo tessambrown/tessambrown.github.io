@@ -2,6 +2,11 @@ body {
     background-color: #FAF9F6;
 }
 
+.center-dot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 
 .dial {
     height: 450px;
