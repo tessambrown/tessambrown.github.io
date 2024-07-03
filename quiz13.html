@@ -41,8 +41,28 @@
     function displayCatInfo(catString) {
       let total = 0;
       let male = 0;
+      let female = 0;
 
       // Add your code here
+      let cats = JSON.parse(catString);
+
+      // Get mother cats' names
+      let motherNames = cats.map(cat => cat.name);
+      motherInfo += motherNames.slice(0, -1).join(', ') + ' and ' + motherNames.slice(-1) + '.';
+
+      // Get kittens' information
+      cats.forEach(cat => {
+        cat.kittens.forEach(kitten => {
+          total++;
+          if (kitten.gender === 'm') {
+            male++;
+          } else if (kitten.gender === 'f') {
+            female++;
+          }
+        });
+      });
+
+      kittenInfo = `There are ${total} kittens in total, ${male} male and ${female} female.`;
 
       // Don't edit the code below here!
 
