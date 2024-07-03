@@ -1,3 +1,16 @@
+body {
+    font-family: 'Special Elite', Courier, monospace; /* Typewriter font */
+    background-color: #FAF9F6;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
 header {
     width: 100%;
     font-size: 30px;
@@ -5,15 +18,19 @@ header {
     padding: 10px;
 }
 
-.quotes {
+.quote {
     padding: 20px 50px;
     min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote-text {
     padding: 20px;
     font-size: 25px;
     color: black;
+    text-align: center;
 }
 
 .controls {
@@ -34,10 +51,7 @@ header {
     font-family: 'Special Elite', Courier, monospace;
     width: 50%;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-    position: absolute;
-    bottom: 20px; /* Position the button at the bottom of the .app div */
-    left: 50%;
-    transform: translateX(-50%); /* Center the button horizontally */
+    margin: 0 auto; /* Center the button horizontally */
 }
 
 .quote-button:hover {
@@ -65,10 +79,7 @@ header {
 }
 
 .app {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     width: 600px;
     height: 400px;
     background: url('/img/paper.jpeg') no-repeat center center;
@@ -77,17 +88,14 @@ header {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
     padding: 20px;
     box-sizing: border-box; /* Ensures padding doesn't affect overall width/height */
+    margin-bottom: 20px; /* Space between app and extend */
 }
 
 .extend {
     width: 600px;
     padding: 50px;
     font-size: 15px;
-}
-
-body {
-    font-family: 'Special Elite', Courier, monospace; /* Typewriter font */
     background-color: #FAF9F6;
-    text-align: center;
-    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
