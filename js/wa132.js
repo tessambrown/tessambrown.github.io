@@ -1,29 +1,27 @@
-// 2 json files
-const requestURL1 = "https://tessambrown.github.io/wa/wa13.JSON";
-const requestURL2 = "https://tessambrown.github.io/wa/wa13company.JSON";
+const employees = require('./wa13.JSON');
+const company = require('./wa13company.JSON');
 
-// fetch the first json file, send it to different functions
-fetch(requestURL1)
-  .then(response => response.text())
-  .then(text => {
-    const employees = JSON.parse(text);
-    displayHRInfo(employees);
-    calculateAndDisplayTotalSalary(employees);
-    applyRaisesAndDisplay(employees);
-    updateWorkFromHomeStatus(employees);
-  });
+displayHRInfo(employees);
+calculateAndDisplayTotalSalary(employees);
+applyRaisesAndDisplay(employees);
+updateWorkFromHomeStatus(employees);
 
-// fetch the second json file, send it to different functions
-fetch(requestURL2)
-  .then(response => response.text())
-  .then(text => {
-    const company = JSON.parse(text);
-    displayCompanyInfo(company);
-    addEmployee(newEmployee, employees, company);
-    calculateAndDisplayTotalSalary(company.employees);
-    applyRaisesAndDisplay(company.employees);
-    updateWorkFromHomeStatus(company.employees);
-});
+displayCompanyInfo(company);
+calculateAndDisplayTotalSalary(company.employees);
+applyRaisesAndDisplay(company.employees);
+updateWorkFromHomeStatus(company.employees);
+
+// new employee to add to the function 
+let newEmployee = {
+    "name": "Anna",
+    "department": "Tech",
+    "designation": "Executive",
+    "salary": 25600,
+    "raise": false
+};
+
+// Add new employee to both employees and company.employees arrays
+addEmployee(newEmployee, employees, company);
 
 // problem 1: -> take in the first json file and output each of the employees
 function displayHRInfo(employees) 
@@ -44,32 +42,20 @@ function displayCompanyInfo(company)
     });
 }
 
-// problem 3: -> function to add a new emploee in to both json files
-function addEmployee(employees, company) 
+// problem 3: -> function to add a new employee into both json files
+function addEmployee(newEmployee, employees, company) 
 {
     console.log('Problem 3:');
     employees.push(newEmployee);
     company.employees.push(newEmployee);
-
-    console.log('Updated Employee JSON File')
     displayHRInfo(employees);
-    console.log('Updated Company and Employee JSON File')
     displayCompanyInfo(company);
 }
 
-// new employee to add to the function 
-let newEmployee = {
-    "name": "Anna",
-    "department": "Tech",
-    "designation": "Executive",
-    "salary": 25600,
-    "raise": false
-};
-
-// problem 4: -> take in the employees and calculate thier total salary
+// problem 4: -> take in the employees and calculate their total salary
 function calculateAndDisplayTotalSalary(employees) 
 {
-    console.log('Problem 4:')
+    console.log('Problem 4:');
     let totalSalary = employees.reduce((total, employee) => total + employee.salary, 0);
     console.log(`Total Salary: ${totalSalary}`);
 }
@@ -77,14 +63,14 @@ function calculateAndDisplayTotalSalary(employees)
 // problem 5: -> if the employee is up for a raise gives them the raise and displays the raise
 function applyRaisesAndDisplay(employees) 
 {
-    console.log('Problem 5:')
+    console.log('Problem 5:');
     let raiseAppliedInfo = 'Employees eligible for a raise: ';
     let anyRaiseApplied = false;
     employees.forEach(employee => {
         if (employee.raise) {
-        employee.salary *= 1.10; // Increase salary by 10%
-        raiseAppliedInfo += `${employee.name} (new salary: ${employee.salary.toFixed(2)}), `;
-        anyRaiseApplied = true;
+            employee.salary *= 1.10; // Increase salary by 10%
+            raiseAppliedInfo += `${employee.name} (new salary: ${employee.salary.toFixed(2)}), `;
+            anyRaiseApplied = true;
         }
     });
 
@@ -100,7 +86,7 @@ function applyRaisesAndDisplay(employees)
 // problem 6: -> updates the work from home status of the employees 
 function updateWorkFromHomeStatus(employees) 
 {
-    console.log('Problem 6:')
+    console.log('Problem 6:');
     const workFromHomeArray = ['Anna', 'Sam'];
     
     employees.forEach(employee => {
@@ -115,4 +101,3 @@ function updateWorkFromHomeStatus(employees)
     wfhInfo = wfhInfo.slice(0, -2) + '.';
     console.log(wfhInfo);
 }
-
