@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const endpoint = "https://zenquotes.io/api/quotes/";
+    const endpoint = "https://zenquotes.io/api/random";
 
     const newPoemButton = document.querySelector('#new-poem');
     newPoemButton.addEventListener('click', getPoem);
