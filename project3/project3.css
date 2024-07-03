@@ -25,6 +25,18 @@ header {
     position: relative;
 }
 
+
+.button1 { top: 10%; left: 50%; transform: translate(-50%, -50%); }
+.button2 { top: 25%; left: 75%; transform: translate(-50%, -50%); }
+.button3 { top: 50%; left: 90%; transform: translate(-50%, -50%); }
+.button4 { top: 75%; left: 75%; transform: translate(-50%, -50%); }
+.button5 { top: 90%; left: 50%; transform: translate(-50%, -50%); }
+.button6 { top: 75%; left: 25%; transform: translate(-50%, -50%); }
+.button7 { top: 50%; left: 10%; transform: translate(-50%, -50%); }
+.button8 { top: 25%; left: 25%; transform: translate(-50%, -50%); }
+.button9 { top: 10%; left: 50%; transform: translate(-50%, -50%); }
+.button0 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
 .dial {
     height: 450px;
     width: 450px;
@@ -46,17 +58,6 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.button1 { top: 10%; left: 50%; transform: translate(-50%, -50%); }
-.button2 { top: 25%; left: 75%; transform: translate(-50%, -50%); }
-.button3 { top: 50%; left: 90%; transform: translate(-50%, -50%); }
-.button4 { top: 75%; left: 75%; transform: translate(-50%, -50%); }
-.button5 { top: 90%; left: 50%; transform: translate(-50%, -50%); }
-.button6 { top: 75%; left: 25%; transform: translate(-50%, -50%); }
-.button7 { top: 50%; left: 10%; transform: translate(-50%, -50%); }
-.button8 { top: 25%; left: 25%; transform: translate(-50%, -50%); }
-.button9 { top: 10%; left: 50%; transform: translate(-50%, -50%); }
-.button0 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
-
 button {
     width: 50px;
     height: 50px;
@@ -68,7 +69,7 @@ button {
 
 .input-text {
     width: 500px;
-    height: 100px;
+    height: 50px;
     margin-top: 20px;
     font-size: 18px;
     text-align: center;
