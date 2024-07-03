@@ -7,11 +7,17 @@ const requestURL2 = "https://tessambrown.github.io/wa/wa13company.JSON";
 
 fetch(requestURL1)
   .then(response => response.text())
-  .then(text => displayHRInfo(text));
+  .then(text => {
+    displayHRInfo(text);
+    calculateAndDisplayTotalSalary(JSON.parse(text), problem1);
+});
 
 fetch(requestURL2)
   .then(response => response.text())
-  .then(text => displayCompanyInfo(text));
+  .then(text => {
+    displayCompanyInfo(text);
+    calculateAndDisplayTotalSalary(JSON.parse(text).employees, problem2);
+});
 
 let employeeInfo = 'The employees are: ';
 
@@ -42,15 +48,6 @@ async function displayCompanyInfo(companyString) {
 
 // problem 3:
 
-// new employee
-let newEmployee = {
-    "name": "Anna",
-    "department": "Tech",
-    "designation": "Executive",
-    "salary": 25600,
-    "raise": false
-};
-
 addEmployee(newEmployee);
 
 function addEmployee(newEmployee) {
@@ -62,3 +59,23 @@ function addEmployee(newEmployee) {
     displayHRInfo(JSON.stringify(employees));
     displayCompanyInfo(JSON.stringify(company));
 }
+
+// new employee
+let newEmployee = {
+    "name": "Anna",
+    "department": "Tech",
+    "designation": "Executive",
+    "salary": 25600,
+    "raise": false
+};
+
+// problem 4
+function calculateAndDisplayTotalSalary(employees, problemElement) 
+{
+    let totalSalary = employees.reduce((total, employee) => total + employee.salary, 0);
+    let totalSalaryPara = document.createElement('p');
+    totalSalaryPara.textContent = `Total Salary: ${totalSalary}`;
+    problemElement.appendChild(totalSalaryPara);
+}
+
+// problem 5
