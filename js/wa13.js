@@ -1,126 +1,119 @@
 // problem 1:
 
-const problem1 = document.querySelector('#problem1');
+// 2 json files
 const requestURL1 = "https://tessambrown.github.io/wa/wa13.JSON";
 const requestURL2 = "https://tessambrown.github.io/wa/wa13company.JSON";
 
-
+// fetch the first json file
 fetch(requestURL1)
   .then(response => response.text())
   .then(text => {
-    displayHRInfo(text);
-});
+    const employees = JSON.parse(text);
+    displayHRInfo(employees);
+    calculateAndDisplayTotalSalary(employees);
+    applyRaisesAndDisplay(employees);
+    updateWorkFromHomeStatus(employees);
+  });
 
+// fetch the second json file 
 fetch(requestURL2)
   .then(response => response.text())
   .then(text => {
-    displayCompanyInfo(text);
-    calculateAndDisplayTotalSalary(JSON.parse(text).employees, problem2);
-    applyRaisesAndDisplay(JSON.parse(text).employees);
-});
+    const company = JSON.parse(text);
+    displayCompanyInfo(company);
+    calculateAndDisplayTotalSalary(company.employees);
+    applyRaisesAndDisplay(company.employees);
+    updateWorkFromHomeStatus(company.employees);
+  });
 
-let employeeInfo = 'The employees are: ';
-
-async function displayHRInfo(HRstring) {
-  let employees = JSON.parse(HRstring);
-
+// problem 1:
+function displayHRInfo(employees) {
+  console.log('Problem 1:');
   employees.forEach(employee => {
-    let para = document.createElement('p');
-    para.textContent = `Name: ${employee.name}, Department: ${employee.department}, Designation: ${employee.designation}, Salary: ${employee.salary}, Raise Eligible: ${employee.raise ? 'Yes' : 'No'}`;
-    problem1.appendChild(para);
+    console.log(`Name: ${employee.name}, Department: ${employee.department}, Designation: ${employee.designation}, Salary: ${employee.salary}, Raise Eligible: ${employee.raise ? 'Yes' : 'No'}`);
   });
 }
 
-// problem 2:
-async function displayCompanyInfo(companyString) {
-    let company = JSON.parse(companyString);
-
-    let companyPara = document.createElement('p');
-    companyPara.textContent = `Company Name: ${company.companyName}, Website: ${company.website}`;
-    problem2.appendChild(companyPara);
-  
-    company.employees.forEach(employee => {
-      let para = document.createElement('p');
-      para.textContent = `Name: ${employee.name}, Department: ${employee.department}, Designation: ${employee.designation}, Salary: ${employee.salary}, Raise Eligible: ${employee.raise ? 'Yes' : 'No'}`;
-      problem2.appendChild(para);
-    });
-}
-
-// problem 3:
-
-addEmployee(newEmployee);
-
-function addEmployee(newEmployee) {
-    
-    employees.push(newEmployee);
-
-    company.employees.push(newEmployee);
-
-    displayHRInfo(JSON.stringify(employees));
-    displayCompanyInfo(JSON.stringify(company));
+// problem 2
+function displayCompanyInfo(company) {
+  console.log('Problem 2:');
+  console.log(`Company Name: ${company.companyName}, Website: ${company.website}`);
+  company.employees.forEach(employee => {
+    console.log(`Name: ${employee.name}, Department: ${employee.department}, Designation: ${employee.designation}, Salary: ${employee.salary}, Raise Eligible: ${employee.raise ? 'Yes' : 'No'}`);
+  });
 }
 
 // new employee
 let newEmployee = {
-    "name": "Anna",
-    "department": "Tech",
-    "designation": "Executive",
-    "salary": 25600,
-    "raise": false
+  "name": "Anna",
+  "department": "Tech",
+  "designation": "Executive",
+  "salary": 25600,
+  "raise": false
 };
 
-// problem 4
-function calculateAndDisplayTotalSalary(employees) 
-{
-    let totalSalary = employees.reduce((total, employee) => total + employee.salary, 0);
-    let totalSalaryPara = document.createElement('p');
-    totalSalaryPara.textContent = `Total Salary: ${totalSalary}`;
-    problemElement.appendChild(totalSalaryPara);
+function addEmployee(newEmployee, employees, company) {
+  employees.push(newEmployee);
+  company.employees.push(newEmployee);
+  displayHRInfo(employees);
+  displayCompanyInfo(company);
 }
 
-// problem 5
-function applyRaisesAndDisplay(employees) 
-{
-    let raiseAppliedInfo = 'Employees eligible for a raise: ';
-    let anyRaiseApplied = false;
-    
-    employees.forEach(employee => {
-      if (employee.raise) {
-        employee.salary *= 1.10; // Increase salary by 10%
-        raiseAppliedInfo += `${employee.name} (new salary: ${employee.salary.toFixed(2)}), `;
-        anyRaiseApplied = true;
-      }
-    });
-} 
-
-
-if (anyRaiseApplied) 
-{
-  raiseAppliedInfo = raiseAppliedInfo.slice(0, -2) + '.';
-} 
-else 
-{
-  raiseAppliedInfo = 'No employees are eligible for a raise.';
+function calculateAndDisplayTotalSalary(employees) {
+  let totalSalary = employees.reduce((total, employee) => total + employee.salary, 0);
+  console.log(`Total Salary: ${totalSalary}`);
 }
 
-// problem 6:
-function updateWorkFromHomeStatus(employees) {
-    const workFromHomeArray = ['Anna', 'Sam'];
-    
-    employees.forEach(employee => {
-      employee.wfh = workFromHomeArray.includes(employee.name);
-    });
+function applyRaisesAndDisplay(employees) {
+  let raiseAppliedInfo = 'Employees eligible for a raise: ';
+  let anyRaiseApplied = false;
   
-    // Display the updated employees information
-    let wfhPara = document.createElement('p');
-    let wfhInfo = 'Work from home status: ';
-    employees.forEach(employee => {
-      wfhInfo += `${employee.name} (wfh: ${employee.wfh ? 'Yes' : 'No'}), `;
-    });
-  
-    // Remove the trailing comma and space, and add a period at the end.
-    wfhInfo = wfhInfo.slice(0, -2) + '.';
-    wfhPara.textContent = wfhInfo;
-    problemElement.appendChild(wfhPara);
+  employees.forEach(employee => {
+    if (employee.raise) {
+      employee.salary *= 1.10; // Increase salary by 10%
+      raiseAppliedInfo += `${employee.name} (new salary: ${employee.salary.toFixed(2)}), `;
+      anyRaiseApplied = true;
+    }
+  });
+
+  if (anyRaiseApplied) {
+    raiseAppliedInfo = raiseAppliedInfo.slice(0, -2) + '.';
+  } else {
+    raiseAppliedInfo = 'No employees are eligible for a raise.';
   }
+
+  console.log(raiseAppliedInfo);
+}
+
+function updateWorkFromHomeStatus(employees) {
+  const workFromHomeArray = ['Anna', 'Sam'];
   
+  employees.forEach(employee => {
+    employee.wfh = workFromHomeArray.includes(employee.name);
+  });
+
+  let wfhInfo = 'Work from home status: ';
+  employees.forEach(employee => {
+    wfhInfo += `${employee.name} (wfh: ${employee.wfh ? 'Yes' : 'No'}), `;
+  });
+
+  wfhInfo = wfhInfo.slice(0, -2) + '.';
+  console.log(wfhInfo);
+}
+
+// Example usage:
+fetch(requestURL1)
+  .then(response => response.text())
+  .then(text => {
+    let employees = JSON.parse(text);
+    let company = {
+      companyName: "Tech Stars",
+      website: "www.techstars.site",
+      employees: employees
+    };
+
+    addEmployee(newEmployee, employees, company);
+    calculateAndDisplayTotalSalary(employees);
+    applyRaisesAndDisplay(employees);
+    updateWorkFromHomeStatus(employees);
+  });
