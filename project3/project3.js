@@ -100,13 +100,13 @@ function addToInput(value) {
 }
 
 // function to handle submit action
-function submitPhoneNumber() {
-    const numberTextDiv = document.getElementById('number-text');
-    const phoneNumber = numberTextDiv.textContent;
+// function submitPhoneNumber() {
+//     const numberTextDiv = document.getElementById('number-text');
+//     const phoneNumber = numberTextDiv.textContent;
 
-    if (phoneNumber.length === 10) {
-        alert(`Phone number submitted: ${phoneNumber}`);
-    } else {
-        alert('Please enter a 10-digit phone number.');
-    }
-}
+//     if (phoneNumber.length === 10) {
+//         alert(`Phone number submitted: ${phoneNumber}`);
+//     } else {
+//         alert('Please enter a 10-digit phone number.');
+//     }
+// }
