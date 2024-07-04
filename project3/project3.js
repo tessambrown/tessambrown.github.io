@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     button2.textContent = getRandomLetter2();
 
-    button2.addEventListener('click', () => addToInput(button1.textContent));
-    });
     
     // button 3 -> D, E, F
     const button3 = document.getElementById("3");
@@ -90,8 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     button9.textContent = getRandomLetter9();
-
+},
 // function to add clicked button's value to the input text
+
+button2.addEventListener('click', () => addToInput(button2.textContent));
+
+
 function addToInput(value) {
     const numberTextDiv = document.getElementById('number-text');
     let currentText = numberTextDiv.textContent;
@@ -100,7 +102,6 @@ function addToInput(value) {
         numberTextDiv.textContent = currentText + value;
     }
 }
-
 
 // function to handle submit action
 // function submitPhoneNumber() {
