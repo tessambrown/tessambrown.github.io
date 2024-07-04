@@ -1,4 +1,4 @@
-// 2 json files
+// 2 json files: 1 for the seperate employees and one for the company
 const requestURL1 = "https://tessambrown.github.io/wa/wa13.JSON";
 const requestURL2 = "https://tessambrown.github.io/wa/wa13company.JSON";
 
@@ -11,9 +11,8 @@ fetch(requestURL1)
     calculateAndDisplayTotalSalary(employees);
     applyRaisesAndDisplay(employees);
     updateWorkFromHomeStatus(employees);
-  });
+});
 
-// fetch the second json file, send it to different functions
 // fetch the second json file, send it to different functions
 fetch(requestURL2)
   .then(response => response.text())
@@ -30,6 +29,7 @@ fetch(requestURL2)
 function displayHRInfo(employees) 
 {
     console.log('Problem 1:');
+
     employees.forEach(employee => {
         console.log(`Name: ${employee.name}, Department: ${employee.department}, Designation: ${employee.designation}, Salary: ${employee.salary}, Raise Eligible: ${employee.raise ? 'Yes' : 'No'}`);
     });
@@ -40,6 +40,7 @@ function displayCompanyInfo(company)
 {
     console.log('Problem 2:');
     console.log(`Company Name: ${company.companyName}, Website: ${company.website}`);
+
     company.employees.forEach(employee => {
         console.log(`Name: ${employee.name}, Department: ${employee.department}, Designation: ${employee.designation}, Salary: ${employee.salary}, Raise Eligible: ${employee.raise ? 'Yes' : 'No'}`);
     });
@@ -50,6 +51,7 @@ function addEmployee(employees, company)
 {
     console.log('Problem 3:');
 
+    //new employee for the add employee function 
     let newEmployee = {
         "name": "Anna",
         "department": "Tech",
@@ -64,13 +66,6 @@ function addEmployee(employees, company)
     }
 
     console.log(`New Employee Added: Name: ${newEmployee.name}, Department: ${newEmployee.department}, Designation: ${newEmployee.designation}, Salary: ${newEmployee.salary}, Raise Eligible: ${newEmployee.raise ? 'Yes' : 'No'}`);
-
-    console.log('Updated Employee JSON File');
-    displayHRInfo(employees);
-    if (company) {
-        console.log('Updated Company and Employee JSON File');
-        displayCompanyInfo(company);
-    }
 }
 
 // problem 4: -> take in the employees and calculate thier total salary
@@ -85,8 +80,11 @@ function calculateAndDisplayTotalSalary(employees)
 function applyRaisesAndDisplay(employees) 
 {
     console.log('Problem 5:')
+
     let raiseAppliedInfo = 'Employees eligible for a raise: ';
     let anyRaiseApplied = false;
+
+    // apply and find raises 
     employees.forEach(employee => {
         if (employee.raise) {
         employee.salary *= 1.10;
@@ -94,12 +92,6 @@ function applyRaisesAndDisplay(employees)
         anyRaiseApplied = true;
         }
     });
-
-    if (anyRaiseApplied) {
-        raiseAppliedInfo = raiseAppliedInfo.slice(0, -2) + '.';
-    } else {
-        raiseAppliedInfo = 'No employees are eligible for a raise.';
-    }
 
     console.log(raiseAppliedInfo);
 }
