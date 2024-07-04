@@ -19,7 +19,6 @@ fetch(requestURL2)
   .then(text => {
     const company = JSON.parse(text);
     displayCompanyInfo(company);
-    addEmployee(newEmployee, employees, company);
     calculateAndDisplayTotalSalary(company.employees);
     applyRaisesAndDisplay(company.employees);
     updateWorkFromHomeStatus(company.employees);
@@ -54,10 +53,10 @@ function addEmployee(employees, company)
 
     console.log(`Name: ${newEmployee.name}, Department: ${newEmployee.department}, Designation: ${newEmployee.designation}, Salary: ${newEmployee.salary}, Raise Eligible: ${newEmployee.raise ? 'Yes' : 'No'}`);
 
-    // console.log('Updated Employee JSON File')
-    // displayHRInfo(employees);
-    // console.log('Updated Company and Employee JSON File')
-    // displayCompanyInfo(company);
+    console.log('Updated Employee JSON File')
+    displayHRInfo(employees);
+    console.log('Updated Company and Employee JSON File')
+    displayCompanyInfo(company);
 }
 
 // new employee to add to the function 
@@ -85,7 +84,7 @@ function applyRaisesAndDisplay(employees)
     let anyRaiseApplied = false;
     employees.forEach(employee => {
         if (employee.raise) {
-        employee.salary *= 1.10; // Increase salary by 10%
+        employee.salary *= 1.10;
         raiseAppliedInfo += `${employee.name} (new salary: ${employee.salary.toFixed(2)}), `;
         anyRaiseApplied = true;
         }
@@ -112,10 +111,9 @@ function updateWorkFromHomeStatus(employees)
 
     let wfhInfo = 'Work from home status: ';
     employees.forEach(employee => {
-        wfhInfo += `${employee.name} (wfh: ${employee.wfh ? 'Yes' : 'No'}), `;
+        wfhInfo += `${employee.name} ('work from home': ${employee.wfh ? 'Yes' : 'No'}), `;
     });
 
     wfhInfo = wfhInfo.slice(0, -2) + '.';
     console.log(wfhInfo);
 }
-
