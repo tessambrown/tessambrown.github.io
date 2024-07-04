@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
     // display random letters on each button
     // button 2 -> A, B, C
     const button2 = document.getElementById("2");
@@ -88,8 +87,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     button9.textContent = getRandomLetter9();
-
-    // if the buttons get pushed fill in the phone number
-    
-
 });
+
+// function to add clicked button's value to the input text
+function addToInput(value) {
+    const numberTextDiv = document.getElementById('number-text');
+    let currentText = numberTextDiv.textContent;
+
+    if (currentText.length < 10) {
+        numberTextDiv.textContent = currentText + value;
+    }
+}
+
+// function to handle submit action
+function submitPhoneNumber() {
+    const numberTextDiv = document.getElementById('number-text');
+    const phoneNumber = numberTextDiv.textContent;
+
+    if (phoneNumber.length === 10) {
+        alert(`Phone number submitted: ${phoneNumber}`);
+    } else {
+        alert('Please enter a 10-digit phone number.');
+    }
+}

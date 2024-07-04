@@ -12,26 +12,24 @@
     </header>
     <div class="phone">
         <div class="dial">
-
-            <button type=button id="1" class="button1">1</button> 
-            <button type="button" id="2" class="button2"></button> 
-            <button type="button" id="3" class="button3"></button>
-            <button type="button" id="4" class="button4"></button>
-            <button type="button" id="5" class="button5"></button>
-            <button type="button" id="6" class="button6"></button>
-            <button type="button" id="7" class="button7"></button>
-            <button type="button" id="8" class="button8"></button>
-            <button type="button" id="9" class="button9"></button>
-            <button type="button" id="0" class="button0">0</button>
-    
+            <button type="button" id="1" class="button" onclick="addToInput('1')">1</button>
+            <button type="button" id="2" class="button" onclick="addToInput(this.textContent)"></button>
+            <button type="button" id="3" class="button" onclick="addToInput(this.textContent)"></button>
+            <button type="button" id="4" class="button" onclick="addToInput(this.textContent)"></button>
+            <button type="button" id="5" class="button" onclick="addToInput(this.textContent)"></button>
+            <button type="button" id="6" class="button" onclick="addToInput(this.textContent)"></button>
+            <button type="button" id="7" class="button" onclick="addToInput(this.textContent)"></button>
+            <button type="button" id="8" class="button" onclick="addToInput(this.textContent)"></button>
+            <button type="button" id="9" class="button" onclick="addToInput(this.textContent)"></button>
+            <button type="button" id="0" class="button" onclick="addToInput('0')">0</button>
         </div>
         <div class="center-dot"></div>
+        <button type="button" class="submit-button" onclick="submitPhoneNumber()">Submit</button>
     </div>
 
     <div id="number-text" class="input-text">
-        <!-- place users entered text -->
+        <!-- place user's entered text -->
     </div>
-    
 
     <script src="project3.js"></script>
 </body>
