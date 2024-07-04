@@ -14,6 +14,7 @@ fetch(requestURL1)
   });
 
 // fetch the second json file, send it to different functions
+// fetch the second json file, send it to different functions
 fetch(requestURL2)
   .then(response => response.text())
   .then(text => {
@@ -22,6 +23,7 @@ fetch(requestURL2)
     calculateAndDisplayTotalSalary(company.employees);
     applyRaisesAndDisplay(company.employees);
     updateWorkFromHomeStatus(company.employees);
+    addEmployee(company.employees, company);
 });
 
 // problem 1: -> take in the first json file and output each of the employees
@@ -43,30 +45,33 @@ function displayCompanyInfo(company)
     });
 }
 
-// problem 3: -> function to add a new emploee in to both json files
+// problem 3: -> function to add a new employee into both json files
 function addEmployee(employees, company) 
 {
     console.log('Problem 3:');
 
-    employees.push(JSON.stringify(newEmployee));
-    company.push(JSON.stringify(newEmployee))
+    let newEmployee = {
+        "name": "Anna",
+        "department": "Tech",
+        "designation": "Executive",
+        "salary": 25600,
+        "raise": false
+    };
 
-    console.log(`Name: ${newEmployee.name}, Department: ${newEmployee.department}, Designation: ${newEmployee.designation}, Salary: ${newEmployee.salary}, Raise Eligible: ${newEmployee.raise ? 'Yes' : 'No'}`);
+    employees.push(newEmployee);
+    if (company && company.employees) {
+        company.employees.push(newEmployee);
+    }
 
-    console.log('Updated Employee JSON File')
+    console.log(`New Employee Added: Name: ${newEmployee.name}, Department: ${newEmployee.department}, Designation: ${newEmployee.designation}, Salary: ${newEmployee.salary}, Raise Eligible: ${newEmployee.raise ? 'Yes' : 'No'}`);
+
+    console.log('Updated Employee JSON File');
     displayHRInfo(employees);
-    console.log('Updated Company and Employee JSON File')
-    displayCompanyInfo(company);
+    if (company) {
+        console.log('Updated Company and Employee JSON File');
+        displayCompanyInfo(company);
+    }
 }
-
-// new employee to add to the function 
-let newEmployee = {
-    "name": "Anna",
-    "department": "Tech",
-    "designation": "Executive",
-    "salary": 25600,
-    "raise": false
-};
 
 // problem 4: -> take in the employees and calculate thier total salary
 function calculateAndDisplayTotalSalary(employees) 
