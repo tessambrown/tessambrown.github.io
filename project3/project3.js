@@ -90,9 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     button9.textContent = getRandomLetter9();
-});
-
-
 
 // function to add clicked button's value to the input text
 function addToInput(value) {
