@@ -90,35 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
     button9.textContent = getRandomLetter9();
 
     // if the buttons get pushed fill in the phone number
-
-    // const selectedButton1 = document.querySelector('#1');
-    // selectedButton1.addEventListener('click', selected1);
-
-    // const selectedButton2 = document.querySelector('#2');
-    // selectedButton2.addEventListener('click', selected2);
-
-    // const selectedButton3 = document.querySelector('#3');
-    // selectedButton3.addEventListener('click', selected3);
-
-    // const selectedButton4 = document.querySelector('#4');
-    // selectedButton4.addEventListener('click', selected4);
-
-    // const selectedButton5 = document.querySelector('#5');
-    // selectedButton5.addEventListener('click', selected5);
-
-    // const selectedButton6 = document.querySelector('#6');
-    // selectedButton6.addEventListener('click', selected6);
-
-    // const selectedButton7 = document.querySelector('#7');
-    // selectedButton7.addEventListener('click', selected7);
-
-    // const selectedButton8 = document.querySelector('#8');
-    // selectedButton8.addEventListener('click', selected8);
-
-    // const selectedButton9 = document.querySelector('#9');
-    // selectedButton9.addEventListener('click', selected9);
-
-    // const selectedButton0 = document.querySelector('#0');
-    // selectedButton0.addEventListener('click', selected0);
+    document.querySelectorAll(".dial button").forEach(button => {
+        button.addEventListener("click", function() {
+            appendToInputText(button.textContent);
+        });
+    });
 
 });

@@ -61,7 +61,9 @@ function addEmployee(employees, company)
     };
 
     employees.push(newEmployee);
-    if (company && company.employees) {
+
+    if (company && company.employees) 
+    {
         company.employees.push(newEmployee);
     }
 
@@ -86,10 +88,11 @@ function applyRaisesAndDisplay(employees)
 
     // apply and find raises 
     employees.forEach(employee => {
-        if (employee.raise) {
-        employee.salary *= 1.10;
-        raiseAppliedInfo += `${employee.name} (new salary: ${employee.salary.toFixed(2)}), `;
-        anyRaiseApplied = true;
+        if (employee.raise) 
+        {
+            employee.salary *= 1.10;
+            raiseAppliedInfo += `${employee.name} (new salary: ${employee.salary.toFixed(2)}), `;
+            anyRaiseApplied = true;
         }
     });
 
