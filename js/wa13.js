@@ -52,10 +52,12 @@ function addEmployee(employees, company)
     employees.push(JSON.stringify(newEmployee));
     company.push(JSON.stringify(newEmployee))
 
-    console.log('Updated Employee JSON File')
-    displayHRInfo(employees);
-    console.log('Updated Company and Employee JSON File')
-    displayCompanyInfo(company);
+    console.log(`Name: ${newEmployee.name}, Department: ${newEmployee.department}, Designation: ${newEmployee.designation}, Salary: ${newEmployee.salary}, Raise Eligible: ${newEmployee.raise ? 'Yes' : 'No'}`);
+
+    // console.log('Updated Employee JSON File')
+    // displayHRInfo(employees);
+    // console.log('Updated Company and Employee JSON File')
+    // displayCompanyInfo(company);
 }
 
 // new employee to add to the function 
