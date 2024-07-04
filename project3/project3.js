@@ -90,10 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
     button9.textContent = getRandomLetter9();
 
     // if the buttons get pushed fill in the phone number
-    document.querySelectorAll(".dial button").forEach(button => {
-        button.addEventListener("click", function() {
-            appendToInputText(button.textContent);
-        });
-    });
+    
 
 });
