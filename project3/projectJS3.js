@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const dialContainer = document.querySelector(".rotary-dial");
+    const dialContainer = document.querySelector(".dial");
     const phoneNumberDisplay = document.getElementById("phone-number");
     let phoneNumber = [];
 
@@ -9,12 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function createDialButtons() {
-        dialContainer.innerHTML = ""; // Clear existing buttons
+        dialContainer.innerHTML = '<div class="center-dot"></div>'; // Clear existing buttons and keep the center dot
         const randomNumbers = generateRandomNumbers();
 
-        randomNumbers.forEach(number => {
-            const button = document.createElement("div");
+        randomNumbers.forEach((number, index) => {
+            const button = document.createElement("button");
             button.classList.add("dial-button");
+            button.classList.add(`button${index}`); // Add positioning class
             button.textContent = number;
             button.addEventListener("click", () => onDialButtonClick(number));
             dialContainer.appendChild(button);
