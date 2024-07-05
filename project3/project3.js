@@ -88,16 +88,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     button9.textContent = getRandomLetter9();
-},
-// function to add clicked button's value to the input text
+    // function to add clicked button's value to the input text
 
+    button2.addEventListener('click', addToInput(2));
 
-function addToInput(value) {
-    const numberTextDiv = document.getElementById('number-text');
-    let currentText = numberTextDiv.textContent;
+    function addToInput(value) {
+        const numberTextDiv = document.getElementById('number-text');
+        let currentText = numberTextDiv.textContent;
 
-    if (currentText.length < 10) {
-        numberTextDiv.textContent = currentText + value;
+        if (currentText.length < 10) {
+            numberTextDiv.textContent = currentText + value;
+        }
     }
-}
-)
+})
