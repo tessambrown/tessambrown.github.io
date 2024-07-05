@@ -25,16 +25,16 @@ header {
     position: relative;
 }
 
-.button1 { top: 8%; left: 50%; transform: translate(-50%, -50%); }
-.button2 { top: 16%; left: 72%; transform: translate(-50%, -50%); }
-.button3 { top: 36%; left: 87%; transform: translate(-50%, -50%); }
-.button4 { top: 60%; left: 91%; transform: translate(-50%, -50%); }
-.button5 { top: 79%; left: 76%; transform: translate(-50%, -50%); }
-.button6 { top: 90%; left: 50%; transform: translate(-50%, -50%); }
-.button7 { top: 78%; left: 25%; transform: translate(-50%, -50%); }
-.button8 { top: 60%; left: 10%; transform: translate(-50%, -50%); }
-.button9 { top: 36%; left: 12%; transform: translate(-50%, -50%); }
-.button0 { top: 16%; left: 28%; transform: translate(-50%, -50%); }
+#1 { top: 8%; left: 50%; transform: translate(-50%, -50%); }
+#2 { top: 16%; left: 72%; transform: translate(-50%, -50%); }
+#3 { top: 36%; left: 87%; transform: translate(-50%, -50%); }
+#4 { top: 60%; left: 91%; transform: translate(-50%, -50%); }
+#5 { top: 79%; left: 76%; transform: translate(-50%, -50%); }
+#6 { top: 90%; left: 50%; transform: translate(-50%, -50%); }
+#7 { top: 78%; left: 25%; transform: translate(-50%, -50%); }
+#8 { top: 60%; left: 10%; transform: translate(-50%, -50%); }
+#9 { top: 36%; left: 12%; transform: translate(-50%, -50%); }
+#0 { top: 16%; left: 28%; transform: translate(-50%, -50%); }
 
 .dial {
     height: 450px;
