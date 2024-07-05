@@ -91,8 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
 },
 // function to add clicked button's value to the input text
 
-button2.addEventListener('click', () => addToInput(button2.textContent));
-
 
 function addToInput(value) {
     const numberTextDiv = document.getElementById('number-text');
@@ -102,15 +100,4 @@ function addToInput(value) {
         numberTextDiv.textContent = currentText + value;
     }
 }
-
-// function to handle submit action
-// function submitPhoneNumber() {
-//     const numberTextDiv = document.getElementById('number-text');
-//     const phoneNumber = numberTextDiv.textContent;
-
-//     if (phoneNumber.length === 10) {
-//         alert(`Phone number submitted: ${phoneNumber}`);
-//     } else {
-//         alert('Please enter a 10-digit phone number.');
-//     }
-// }
+)
