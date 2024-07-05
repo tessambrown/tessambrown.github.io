@@ -22,34 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function onDialButtonClick(number) 
-    {
-        if (phoneNumber.length < 10) 
-        {
+    function onDialButtonClick(number) {
+        if (phoneNumber.length < 10) {
             phoneNumber.push(number);
             phoneNumberDisplay.textContent = phoneNumber.join("");
-            if (phoneNumber.length === 10) 
-            {
+            if (phoneNumber.length === 10) {
                 alert("Phone number entered: " + phoneNumber.join(""));
             }
         }
         createDialButtons(); // Regenerate buttons with random numbers
     }
 
-    function onSubmit() 
-    {
-        if (phoneNumber.length === 10) 
-        {
-            alert("Phone number submitted: " + phoneNumber.join(""));
-        } 
-        else 
-        {
-            alert("Please enter a 10-digit phone number.");
-        }
-    }
+    createDialButtons();
+});
 
     // submitButton = document.querySelector("submit-button")
     // submitButton.addEventListener("click", onSubmit);
 
-    createDialButtons();
-});
