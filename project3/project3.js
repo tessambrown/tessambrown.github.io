@@ -100,4 +100,17 @@ document.addEventListener('DOMContentLoaded', () => {
             numberTextDiv.textContent = currentText + value;
         }
     }
+
+
+    // Function to handle submit action
+    function submitPhoneNumber() {
+        const numberTextDiv = document.getElementById('number-text');
+        const phoneNumber = numberTextDiv.textContent;
+
+        if (phoneNumber.length === 10) {
+            alert(`Phone number submitted: ${phoneNumber}`);
+        } else {
+            alert('Please enter a 10-digit phone number.');
+        }
+    }
 })
