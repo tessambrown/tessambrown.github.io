@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    submitButton = document.querySelector("submit-button")
-    submitButton.addEventListener("click", onSubmit);
+    // submitButton = document.querySelector("submit-button")
+    // submitButton.addEventListener("click", onSubmit);
 
     createDialButtons();
 });
