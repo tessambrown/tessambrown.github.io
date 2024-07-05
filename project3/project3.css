@@ -86,7 +86,7 @@ button:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px inset;
 }
 
-@keyframes rotate-clockwise {
+/* @keyframes rotate-clockwise {
     0% { transform: rotate(0deg); }
     50% { transform: rotate(270deg); }
     100% { transform: rotate(0deg); }
@@ -96,4 +96,4 @@ button:hover {
     0% { transform: rotate(0deg); }
     50% { transform: rotate(-270deg); }
     100% { transform: rotate(0deg); }
-}
+} */
