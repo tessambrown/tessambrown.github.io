@@ -1,34 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Function to get a random letter from a given array of letters
+    // Function to get a random letter from a given set
     function getRandomLetter(letters) {
         const randomIndex = Math.floor(Math.random() * letters.length);
         return letters[randomIndex];
     }
 
-    // Setting random letters to buttons
+    // Set random letters for buttons 2 to 9
     const buttonData = [
-        { id: "2", letters: ['A', 'B', 'C'] },
-        { id: "3", letters: ['D', 'E', 'F'] },
-        { id: "4", letters: ['G', 'H', 'I'] },
-        { id: "5", letters: ['J', 'K', 'L'] },
-        { id: "6", letters: ['M', 'N', 'O'] },
-        { id: "7", letters: ['P', 'Q', 'R', 'S'] },
-        { id: "8", letters: ['T', 'U', 'V'] },
-        { id: "9", letters: ['W', 'X', 'Y', 'Z'] }
+        { id: '2', letters: ['A', 'B', 'C'] },
+        { id: '3', letters: ['D', 'E', 'F'] },
+        { id: '4', letters: ['G', 'H', 'I'] },
+        { id: '5', letters: ['J', 'K', 'L'] },
+        { id: '6', letters: ['M', 'N', 'O'] },
+        { id: '7', letters: ['P', 'Q', 'R', 'S'] },
+        { id: '8', letters: ['T', 'U', 'V'] },
+        { id: '9', letters: ['W', 'X', 'Y', 'Z'] }
     ];
 
-    buttonData.forEach(buttonInfo => {
-        const button = document.getElementById(buttonInfo.id);
-        button.textContent = getRandomLetter(buttonInfo.letters);
-    });
-
-    // Adding event listeners to each button
-    const buttons = document.querySelectorAll('.button1, .button2, .button3, .button4, .button5, .button6, .button7, .button8, .button9, .button0');
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            console.log(`Button ${button.textContent} clicked`);  // Debug log
-            addToInput(button.textContent);
-        });
+    buttonData.forEach(button => {
+        const btn = document.getElementById(button.id);
+        if (btn) {
+            btn.textContent = getRandomLetter(button.letters);
+        }
     });
 });
 
@@ -39,9 +32,6 @@ function addToInput(value) {
 
     if (currentText.length < 10) {
         numberTextDiv.textContent = currentText + value;
-        console.log(`Current text: ${numberTextDiv.textContent}`);  // Debug log
-    } else {
-        console.log('Maximum length reached');  // Debug log
     }
 }
 
