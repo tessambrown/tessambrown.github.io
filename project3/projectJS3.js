@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function createDialButtons() 
     {
-        dialContainer.innerHTML = '<div class="center-dot"></div>'; // Clear existing buttons and keep the center dot
+        dialContainer.innerHTML = '<div class="center-dot"></div>';
         const randomNumbers = generateRandomNumbers();
 
         randomNumbers.forEach((number, index) => {
