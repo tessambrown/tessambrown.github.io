@@ -51,6 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
         else 
         {
             alert('Please enter a 10-digit phone number.');
+            phoneNumber = [];
+            phoneNumberDisplay.textContent = "";
         }
     }
 
