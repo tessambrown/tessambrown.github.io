@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // when one of the buttons is clicked it gets displayed
     function onDialButtonClick(number) 
     {
         if (phoneNumber.length < 10) 
