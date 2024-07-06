@@ -111,3 +111,48 @@ header {
     50% { transform: rotate(-270deg); }
     100% { transform: rotate(0deg); }
 }
+
+/* media 400px width */
+/* Media Query for screen sizes of 400px or less */
+@media (max-width: 400px) {
+    .phone {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .dial {
+        width: 270px;
+        height: 270px;
+    }
+    
+    .center-dot {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .dial-button {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    
+    .button1 { top: 8%; left: 50%; transform: translate(-50%, -50%); }
+    .button2 { top: 16%; left: 72%; transform: translate(-50%, -50%); }
+    .button3 { top: 36%; left: 87%; transform: translate(-50%, -50%); }
+    .button4 { top: 60%; left: 91%; transform: translate(-50%, -50%); }
+    .button5 { top: 79%; left: 76%; transform: translate(-50%, -50%); }
+    .button6 { top: 90%; left: 50%; transform: translate(-50%, -50%); }
+    .button7 { top: 78%; left: 25%; transform: translate(-50%, -50%); }
+    .button8 { top: 60%; left: 10%; transform: translate(-50%, -50%); }
+    .button9 { top: 36%; left: 12%; transform: translate(-50%, -50%); }
+    .button0 { top: 16%; left: 28%; transform: translate(-50%, -50%); }
+    
+    .phone-number {
+        font-size: 18px;
+    }
+    
+    .submit-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
