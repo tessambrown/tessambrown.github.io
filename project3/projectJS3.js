@@ -1,16 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const dialContainer = document.querySelector(".dial");
     const phoneNumberDisplay = document.getElementById("phone-number");
+    const submitButton = document.getElementById("submit-button");
     let phoneNumber = [];
 
-    function generateRandomNumbers() 
-    {
+    function generateRandomNumbers() {
         const numbers = Array.from({ length: 10 }, (_, i) => i);
         return numbers.sort(() => Math.random() - 0.5);
     }
 
-    function createDialButtons() 
-    {
+    function createDialButtons() {
         dialContainer.innerHTML = '<div class="center-dot"></div>'; // Clear existing buttons and keep the center dot
         const randomNumbers = generateRandomNumbers();
 
@@ -24,40 +23,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function onDialButtonClick(number) 
-    {
-        if (phoneNumber.length < 10) 
-        {
+    function onDialButtonClick(number) {
+        if (phoneNumber.length < 10) {
             phoneNumber.push(number);
             phoneNumberDisplay.textContent = phoneNumber.join("");
 
-            if (phoneNumber.length === 10) 
-            {
+            if (phoneNumber.length === 10) {
                 alert("Phone number entered: " + phoneNumber.join(""));
             }
         }
         createDialButtons(); // Regenerate buttons with random numbers
     }
 
-    // submitButton = document.querySelector("submit-button")
-    // submitButton.addEventListener("click", onSubmit);
+    function onSubmit() {
+        if (phoneNumber.length === 10) {
+            alert(`Phone number submitted: ${phoneNumber.join('')}`);
+        } else {
+            alert('Please enter a 10-digit phone number.');
+        }
+    }
 
-    // Function to handle submit action
-    // function onSubmit() 
-    // {
-    //     const numberTextDiv = document.getElementById('number-text');
-    //     const phoneNumber = numberTextDiv.textContent;
-
-    //     if (phoneNumber.length === 10) 
-    //     {
-    //         alert(`Phone number submitted: ${phoneNumber}`);
-    //     } 
-    //     else 
-    //     {
-    //         alert('Please enter a 10-digit phone number.');
-    //     }
-    // }
+    submitButton.addEventListener("click", onSubmit);
 
     createDialButtons();
 });
-
