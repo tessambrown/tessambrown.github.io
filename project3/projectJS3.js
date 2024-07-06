@@ -4,12 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const submitButton = document.getElementById("submit-button");
     let phoneNumber = [];
 
-    function generateRandomNumbers() {
+    function generateRandomNumbers() 
+    {
         const numbers = Array.from({ length: 10 }, (_, i) => i);
         return numbers.sort(() => Math.random() - 0.5);
     }
 
-    function createDialButtons() {
+    function createDialButtons() 
+    {
         dialContainer.innerHTML = '<div class="center-dot"></div>'; // Clear existing buttons and keep the center dot
         const randomNumbers = generateRandomNumbers();
 
@@ -23,12 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function onDialButtonClick(number) {
-        if (phoneNumber.length < 10) {
+    function onDialButtonClick(number) 
+    {
+        if (phoneNumber.length < 10) 
+        {
             phoneNumber.push(number);
             phoneNumberDisplay.textContent = phoneNumber.join("");
 
-            if (phoneNumber.length > 10) {
+            if (phoneNumber.length > 10) 
+            {
                 alert('Please enter a 10-digit phone number.');
             }
         }
