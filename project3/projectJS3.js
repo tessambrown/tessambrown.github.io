@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         randomNumbers.forEach((number, index) => {
             const button = document.createElement("button");
             button.classList.add("dial-button");
-            button.classList.add(`button${index}`); // Add positioning class
+            button.classList.add(`button${index}`);
             button.textContent = number;
             button.addEventListener("click", () => onDialButtonClick(number));
             dialContainer.appendChild(button);
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert('Please enter a 10-digit phone number.');
             }
         }
-        
+
         createDialButtons(); // Regenerate buttons with random numbers
     }
 
