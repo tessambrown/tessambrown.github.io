@@ -35,10 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
         createDialButtons(); // Regenerate buttons with random numbers
     }
 
-    function onSubmit() {
-        if (phoneNumber.length === 10) {
+    function onSubmit() 
+    {
+        if (phoneNumber.length === 10) 
+        {
             alert(`Phone number submitted: ${phoneNumber.join('')}`);
-        } else {
+            phoneNumber = [];
+            phoneNumberDisplay.textContent = "";
+        } 
+        else 
+        {
             alert('Please enter a 10-digit phone number.');
         }
     }
