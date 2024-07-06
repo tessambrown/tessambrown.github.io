@@ -64,6 +64,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     submitButton.addEventListener("click", onSubmit);
-
     createDialButtons();
 });
