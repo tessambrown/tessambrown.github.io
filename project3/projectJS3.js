@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     const dialContainer = document.querySelector(".dial");
     const phoneNumberDisplay = document.getElementById("phone-number");
     const submitButton = document.getElementById("submit-button");
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert('Please enter a 10-digit phone number.');
             }
         }
+        
         createDialButtons(); // Regenerate buttons with random numbers
     }
 
