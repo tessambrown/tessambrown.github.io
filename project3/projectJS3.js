@@ -33,9 +33,22 @@ document.addEventListener("DOMContentLoaded", () => {
         createDialButtons(); // Regenerate buttons with random numbers
     }
 
+    submitButton = document.querySelector("submit-button")
+    submitButton.addEventListener("click", onSubmit);
+
+    // Function to handle submit action
+    function onSubmit() 
+    {
+        const numberTextDiv = document.getElementById('number-text');
+        const phoneNumber = numberTextDiv.textContent;
+
+        if (phoneNumber.length === 10) {
+            alert(`Phone number submitted: ${phoneNumber}`);
+        } else {
+            alert('Please enter a 10-digit phone number.');
+        }
+    }
+    
     createDialButtons();
 });
-
-    // submitButton = document.querySelector("submit-button")
-    // submitButton.addEventListener("click", onSubmit);
 
