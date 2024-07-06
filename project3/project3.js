@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // if the user has more than 10 numbers then it sends an error and clears the input
         if (phoneNumber.length > 10) 
         {
-            alert('Please enter a 10-digit phone number.');
+            alert('Please enter a 10-digit phone number!');
             phoneNumber = [];
             phoneNumberDisplay.textContent = "";
         }
@@ -51,13 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
     {
         if (phoneNumber.length === 10) 
         {
-            alert(`Phone number submitted: ${phoneNumber.join('')}`);
+            alert(`Phone number submitted: ${phoneNumber.join('')}!`);
             phoneNumber = [];
             phoneNumberDisplay.textContent = "";
         } 
         else 
         {
-            alert('Please enter a 10-digit phone number.');
+            alert('Please enter a 10-digit phone number!');
             phoneNumber = [];
             phoneNumberDisplay.textContent = "";
         }
