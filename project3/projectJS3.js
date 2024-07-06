@@ -33,17 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             phoneNumber.push(number);
             phoneNumberDisplay.textContent = phoneNumber.join("");
-
-            // if the user has more than 10 numbers then it sends an error and clears the input
-            if (phoneNumber.length > 10) 
-            {
-                alert('Please enter a 10-digit phone number.');
-                phoneNumber = [];
-                phoneNumberDisplay.textContent = "";
-            }
         }
 
-        createDialButtons(); // Regenerate buttons with random numbers
+        // if the user has more than 10 numbers then it sends an error and clears the input
+        if (phoneNumber.length > 10) 
+        {
+            alert('Please enter a 10-digit phone number.');
+            phoneNumber = [];
+            phoneNumberDisplay.textContent = "";
+        }
+
+        createDialButtons(); 
     }
 
     // clear the entered phone number when the user presses submit
