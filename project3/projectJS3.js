@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
             phoneNumber.push(number);
             phoneNumberDisplay.textContent = phoneNumber.join("");
 
-            if (phoneNumber.length === 10) {
-                alert("Phone number entered: " + phoneNumber.join(""));
+            if (phoneNumber.length > 10) {
+                alert('Please enter a 10-digit phone number.');
             }
         }
         createDialButtons(); // Regenerate buttons with random numbers
